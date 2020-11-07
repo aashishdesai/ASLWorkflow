@@ -1,0 +1,362 @@
+﻿body
+{
+    font-family: Verdana, Geneva, sans-serif;
+}
+#frame
+{
+    padding: 10px;
+    border: 1px solid #00A6CF;
+    display: inline-block;
+}
+table.WFStatus td
+{
+    border-collapse: collapse;
+    border: 1px solid #F88017;
+    color: Black;
+}
+.WFStatus2
+{
+    border: 0;
+    color: Black;
+}
+
+.fontcolor
+{
+    color: #000080;
+    font-size: 13px;
+}
+.columnspacing
+{
+    width: 2%;
+}
+.columnspacingsteps
+{
+    width: 16%;
+}
+table.table1
+{
+    width: 200px;
+}
+table
+{
+    width: 100%;
+    border: 1px solid;
+    border-color: #00A6CF;
+    border-style: outset;
+}
+#tablelandingpage
+{
+    width: 800px;
+    border: 1px solid;
+    border-color: #00A6CF;
+    border-style: outset;
+    border-top: 0;
+}
+.tableheader
+{
+    width: 100%;
+    font-weight: normal;
+    background-color: #ebf5ff;
+    color:#000080;
+    font-size:13px;
+}
+.tablefooter
+{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #ebf5ff;
+    z-index: 150;
+    clear: both;
+    text-align: center;
+}
+.AreaBox
+{
+    font-family: Verdana, Geneva, sans-serif;
+    color:#000080;
+    height: 310px;
+    width: 320px;
+}
+.StepsBox
+{
+    font-family: Verdana, Geneva, sans-serif;
+    color:#000080;
+    height: 310px;
+    width: 320px;
+}
+.bluebordertxtbox
+{
+    border: thin solid #0461C8;
+    }
+
+
+#MessageBox
+{
+    height: 30%;
+}
+/* for 1st Column alignment*/
+.subjecttextbox
+{
+    width: 50%;
+}
+.Column1
+
+{
+    width:20%;
+}
+
+.Column4
+{
+    width: 16%;
+}
+.Column18
+{
+    width: 18%;
+}
+.Column35
+{
+    width: 35%;
+}
+.Column7
+{
+    width: 20%;
+}
+.Column25
+{
+    width: 25%;
+}
+.Column5
+{
+    width: 220px;
+}
+.Column6
+{
+    width: 350px;
+}
+.Column8
+{
+    width: 30%;
+}
+.Column10
+{
+    width: 10%;
+}
+.Column13
+{
+    width: 13%;
+}
+
+.buttonalignment
+{
+    float: right;
+    text-align: right;
+}
+.pagerTemplate
+{
+    border:0px;
+    }
+#button
+{
+    font-family: Verdana, Geneva, sans-serif;
+    color: #000000;
+    font-size: 13px;
+    padding: 6px;
+    background: #B7DDE8;
+    font-weight: bold;
+}
+.lpbutton
+{
+    BORDER-RIGHT: black 1px solid;
+    BORDER-TOP: black 1px solid;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    BORDER-LEFT: black 1px solid;
+    WIDTH: 80px;
+    CURSOR: hand;
+    COLOR: black;
+    BORDER-BOTTOM: black 1px solid;
+    BACKGROUND-COLOR: #ebf5ff;
+    TEXT-DECORATION: none
+    
+  /*  font-family: Verdana, Geneva, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    width: 87px;
+    cursor: pointer;
+    color: Black;
+    background-color: #92CDDB;
+    text-decoration: none;
+    border-style: solid;
+    border-width: thin;
+    border-color: Black;*/
+}
+.lpbuttonwide
+{
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    width: 115px;
+    cursor: pointer;
+    color: #0461C8;
+    background-color: #92CDDB;
+    text-decoration: none;
+    border-style: solid;
+    border-width: thin;
+    border-color: Black;
+}
+.lpbuttonverywide
+{
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    width: 180px;
+    cursor: pointer;
+    color: #0461C8;
+    background-color: #92CDDB;
+    text-decoration: none;
+    border-style: solid;
+    border-width: thin;
+    border-color: Black;
+}
+#bodyfontcolor
+{
+    color: #000080;
+    margin: 0 auto;
+    text-align: left;
+    width: 800px;
+    
+}
+#popup
+{
+    color: #000080;
+    margin: 0 auto;
+    text-align: left;
+    width: 450px;
+    
+}
+#EditWFPage
+{
+    font-family:Verdana;
+    color: #000080;
+    margin: 0 auto;
+    text-align: left;
+    font-size:14px;
+    width: 800px;
+    height:539px;}
+#EditSelectWF
+{
+    font-family:Verdana;
+    color: #000080;
+    margin: 0 auto;
+    text-align: left;
+    font-size:14px;
+    width: 800px;
+    height:539px;
+}
+#WFStdReport
+{
+    color: Black;
+    margin: 0 auto;
+    text-align: left;
+    width: 800px;
+    font-size: 13px;
+}
+#initWF
+{
+    color: Black;
+    margin: 0 auto;
+    text-align: left;
+    width: 760px;
+    font-size:16px;
+}
+#headers
+{
+    font-size: 13px;
+    font-weight: bold;
+    color: #000080;
+}
+#bolds
+{
+    font-weight: bold;
+    color: #000080;
+}
+#addWF
+{
+    width: 800px;
+    height: 412px;
+}
+#WFTask
+{
+    width: 800px;
+    height: 420px;
+}
+#editWFSteps
+{
+    width: 100%;
+    height: 100%;
+}
+
+#editWF
+{
+    width: 100%;
+    height: 505px;
+}
+#wfstdreport
+{
+    width: 100%;
+    height: 505px;
+}
+/*Landing Page*/
+.tableLandingPage
+{
+}
+.columnleft
+{
+    width: 50%;
+    text-align: left;
+}
+.columncentre
+{
+    text-align: center;
+    text-decoration: underline;
+}
+.columnright
+{
+    /*width: 50%;*/
+    text-align: right;
+}
+.lpcolumn
+{
+    width: 170px;
+}
+.pageheader
+{
+    text-align: left;
+    background-color: Black;
+    color: White;
+    font-size: 20px;
+}
+#orangeheaders
+{
+    color: #F88017;
+}
+.orangetext
+{
+    color: #F88017;
+    font-size: 13px;
+    font-weight:bold;
+}
+.txtbox190
+{
+    width:82%;
+}
+.ResultLabel
+{
+    color: Red;
+    float:right;
+    }
+    
+    
+.hiddencol { display: none; }

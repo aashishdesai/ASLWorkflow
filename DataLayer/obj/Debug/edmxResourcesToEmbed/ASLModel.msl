@@ -1,0 +1,875 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ASLModelStoreContainer" CdmEntityContainer="ASLEntities">
+    <EntitySetMapping Name="C_C_UT_Codes">
+      <EntityTypeMapping TypeName="ASLModel.C_C_UT_Codes">
+        <MappingFragment StoreEntitySet="_C_UT_Codes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="Is_System" ColumnName="Is_System" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_H_EM_Employees">
+      <EntityTypeMapping TypeName="ASLModel.C_H_EM_Employees">
+        <MappingFragment StoreEntitySet="_H_EM_Employees">
+          <ScalarProperty Name="C_Id" ColumnName="_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Supervisor" ColumnName="Supervisor" />
+          <ScalarProperty Name="Date_of_Hire" ColumnName="Date_of_Hire" />
+          <ScalarProperty Name="Seniority_Date" ColumnName="Seniority_Date" />
+          <ScalarProperty Name="Expatriate" ColumnName="Expatriate" />
+          <ScalarProperty Name="Expatriate_Country" ColumnName="Expatriate_Country" />
+          <ScalarProperty Name="Visa_Type" ColumnName="Visa_Type" />
+          <ScalarProperty Name="Visa_Effective" ColumnName="Visa_Effective" />
+          <ScalarProperty Name="Visa_Expiry" ColumnName="Visa_Expiry" />
+          <ScalarProperty Name="Preferred_Language" ColumnName="Preferred_Language" />
+          <ScalarProperty Name="Other_Language" ColumnName="Other_Language" />
+          <ScalarProperty Name="Salutation" ColumnName="Salutation" />
+          <ScalarProperty Name="Name_Suffix" ColumnName="Name_Suffix" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Middle_Name" ColumnName="Middle_Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Maiden_Name" ColumnName="Maiden_Name" />
+          <ScalarProperty Name="Preferred_Name" ColumnName="Preferred_Name" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Married" ColumnName="Married" />
+          <ScalarProperty Name="Marital_Status" ColumnName="Marital_Status" />
+          <ScalarProperty Name="Spouse_First_Name" ColumnName="Spouse_First_Name" />
+          <ScalarProperty Name="Spouse_Middle_Name" ColumnName="Spouse_Middle_Name" />
+          <ScalarProperty Name="Spouse_Last_Name" ColumnName="Spouse_Last_Name" />
+          <ScalarProperty Name="Spouse_SIN" ColumnName="Spouse_SIN" />
+          <ScalarProperty Name="Spouse_SSN_Number" ColumnName="Spouse_SSN_Number" />
+          <ScalarProperty Name="Spouse_National_Number" ColumnName="Spouse_National_Number" />
+          <ScalarProperty Name="Spouse_Sex" ColumnName="Spouse_Sex" />
+          <ScalarProperty Name="Spouse_DOB" ColumnName="Spouse_DOB" />
+          <ScalarProperty Name="Address_Street_Number" ColumnName="Address_Street_Number" />
+          <ScalarProperty Name="Address_City_Town" ColumnName="Address_City_Town" />
+          <ScalarProperty Name="Address_Province_State" ColumnName="Address_Province_State" />
+          <ScalarProperty Name="Address_Country" ColumnName="Address_Country" />
+          <ScalarProperty Name="Postal_Code" ColumnName="Postal_Code" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Facsimile" ColumnName="Facsimile" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Telephone_Car" ColumnName="Telephone_Car" />
+          <ScalarProperty Name="Telephone_Mobile" ColumnName="Telephone_Mobile" />
+          <ScalarProperty Name="Alternate_Street_Number" ColumnName="Alternate_Street_Number" />
+          <ScalarProperty Name="Alternate_City_Town" ColumnName="Alternate_City_Town" />
+          <ScalarProperty Name="Alternate_Province_State" ColumnName="Alternate_Province_State" />
+          <ScalarProperty Name="Alternate_Country" ColumnName="Alternate_Country" />
+          <ScalarProperty Name="Alternate_Postal_Code" ColumnName="Alternate_Postal_Code" />
+          <ScalarProperty Name="Alternate_Telephone" ColumnName="Alternate_Telephone" />
+          <ScalarProperty Name="Alternate_Facsimile" ColumnName="Alternate_Facsimile" />
+          <ScalarProperty Name="Alternate_EMail" ColumnName="Alternate_EMail" />
+          <ScalarProperty Name="Alternate_Telephone_Car" ColumnName="Alternate_Telephone_Car" />
+          <ScalarProperty Name="Alternate_Telephone_Mobile" ColumnName="Alternate_Telephone_Mobile" />
+          <ScalarProperty Name="Date_of_Birth" ColumnName="Date_of_Birth" />
+          <ScalarProperty Name="Date_Deceased" ColumnName="Date_Deceased" />
+          <ScalarProperty Name="Sin_Number" ColumnName="Sin_Number" />
+          <ScalarProperty Name="SSN_Number" ColumnName="SSN_Number" />
+          <ScalarProperty Name="National_Number" ColumnName="National_Number" />
+          <ScalarProperty Name="Citizenship" ColumnName="Citizenship" />
+          <ScalarProperty Name="Telephone_Business" ColumnName="Telephone_Business" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="Facsimile_Business" ColumnName="Facsimile_Business" />
+          <ScalarProperty Name="EMail_Business" ColumnName="EMail_Business" />
+          <ScalarProperty Name="Telephone_Car_Business" ColumnName="Telephone_Car_Business" />
+          <ScalarProperty Name="Telephone_Mobile_Business" ColumnName="Telephone_Mobile_Business" />
+          <ScalarProperty Name="Mail_Drop" ColumnName="Mail_Drop" />
+          <ScalarProperty Name="Special_ID" ColumnName="Special_ID" />
+          <ScalarProperty Name="Rehire_Date" ColumnName="Rehire_Date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Status_Effective_Date" ColumnName="Status_Effective_Date" />
+          <ScalarProperty Name="I9_Renewal_Date" ColumnName="I9_Renewal_Date" />
+          <ScalarProperty Name="I9_Status" ColumnName="I9_Status" />
+          <ScalarProperty Name="W4_Status" ColumnName="W4_Status" />
+          <ScalarProperty Name="W4_Notes" ColumnName="W4_Notes" />
+          <ScalarProperty Name="W4_Filing_Status" ColumnName="W4_Filing_Status" />
+          <ScalarProperty Name="W4_Exemptions" ColumnName="W4_Exemptions" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="PIEmployee_Number" ColumnName="PIEmployee_Number" />
+          <ScalarProperty Name="Use_Delegate" ColumnName="Use_Delegate" />
+          <ScalarProperty Name="Delegate_To" ColumnName="Delegate_To" />
+          <ScalarProperty Name="Supervisor_Locked" ColumnName="Supervisor_Locked" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_H_UT_Codes">
+      <EntityTypeMapping TypeName="ASLModel.C_H_UT_Codes">
+        <MappingFragment StoreEntitySet="_H_UT_Codes">
+          <ScalarProperty Name="C_Id" ColumnName="_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="Is_System" ColumnName="Is_System" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_P_EM_Employees">
+      <EntityTypeMapping TypeName="ASLModel.C_P_EM_Employees">
+        <MappingFragment StoreEntitySet="_P_EM_Employees">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Supervisor" ColumnName="Supervisor" />
+          <ScalarProperty Name="Date_of_Hire" ColumnName="Date_of_Hire" />
+          <ScalarProperty Name="Seniority_Date" ColumnName="Seniority_Date" />
+          <ScalarProperty Name="Expatriate" ColumnName="Expatriate" />
+          <ScalarProperty Name="Expatriate_Country" ColumnName="Expatriate_Country" />
+          <ScalarProperty Name="Visa_Type" ColumnName="Visa_Type" />
+          <ScalarProperty Name="Visa_Effective" ColumnName="Visa_Effective" />
+          <ScalarProperty Name="Visa_Expiry" ColumnName="Visa_Expiry" />
+          <ScalarProperty Name="Preferred_Language" ColumnName="Preferred_Language" />
+          <ScalarProperty Name="Other_Language" ColumnName="Other_Language" />
+          <ScalarProperty Name="Salutation" ColumnName="Salutation" />
+          <ScalarProperty Name="Name_Suffix" ColumnName="Name_Suffix" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Middle_Name" ColumnName="Middle_Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Maiden_Name" ColumnName="Maiden_Name" />
+          <ScalarProperty Name="Preferred_Name" ColumnName="Preferred_Name" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Married" ColumnName="Married" />
+          <ScalarProperty Name="Marital_Status" ColumnName="Marital_Status" />
+          <ScalarProperty Name="Spouse_First_Name" ColumnName="Spouse_First_Name" />
+          <ScalarProperty Name="Spouse_Middle_Name" ColumnName="Spouse_Middle_Name" />
+          <ScalarProperty Name="Spouse_Last_Name" ColumnName="Spouse_Last_Name" />
+          <ScalarProperty Name="Spouse_SIN" ColumnName="Spouse_SIN" />
+          <ScalarProperty Name="Spouse_SSN_Number" ColumnName="Spouse_SSN_Number" />
+          <ScalarProperty Name="Spouse_National_Number" ColumnName="Spouse_National_Number" />
+          <ScalarProperty Name="Spouse_Sex" ColumnName="Spouse_Sex" />
+          <ScalarProperty Name="Spouse_DOB" ColumnName="Spouse_DOB" />
+          <ScalarProperty Name="Address_Street_Number" ColumnName="Address_Street_Number" />
+          <ScalarProperty Name="Address_City_Town" ColumnName="Address_City_Town" />
+          <ScalarProperty Name="Address_Province_State" ColumnName="Address_Province_State" />
+          <ScalarProperty Name="Address_Country" ColumnName="Address_Country" />
+          <ScalarProperty Name="Postal_Code" ColumnName="Postal_Code" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Facsimile" ColumnName="Facsimile" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Telephone_Car" ColumnName="Telephone_Car" />
+          <ScalarProperty Name="Telephone_Mobile" ColumnName="Telephone_Mobile" />
+          <ScalarProperty Name="Alternate_Street_Number" ColumnName="Alternate_Street_Number" />
+          <ScalarProperty Name="Alternate_City_Town" ColumnName="Alternate_City_Town" />
+          <ScalarProperty Name="Alternate_Province_State" ColumnName="Alternate_Province_State" />
+          <ScalarProperty Name="Alternate_Country" ColumnName="Alternate_Country" />
+          <ScalarProperty Name="Alternate_Postal_Code" ColumnName="Alternate_Postal_Code" />
+          <ScalarProperty Name="Alternate_Telephone" ColumnName="Alternate_Telephone" />
+          <ScalarProperty Name="Alternate_Facsimile" ColumnName="Alternate_Facsimile" />
+          <ScalarProperty Name="Alternate_EMail" ColumnName="Alternate_EMail" />
+          <ScalarProperty Name="Alternate_Telephone_Car" ColumnName="Alternate_Telephone_Car" />
+          <ScalarProperty Name="Alternate_Telephone_Mobile" ColumnName="Alternate_Telephone_Mobile" />
+          <ScalarProperty Name="Date_of_Birth" ColumnName="Date_of_Birth" />
+          <ScalarProperty Name="Date_Deceased" ColumnName="Date_Deceased" />
+          <ScalarProperty Name="Sin_Number" ColumnName="Sin_Number" />
+          <ScalarProperty Name="SSN_Number" ColumnName="SSN_Number" />
+          <ScalarProperty Name="National_Number" ColumnName="National_Number" />
+          <ScalarProperty Name="Citizenship" ColumnName="Citizenship" />
+          <ScalarProperty Name="Telephone_Business" ColumnName="Telephone_Business" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="Facsimile_Business" ColumnName="Facsimile_Business" />
+          <ScalarProperty Name="EMail_Business" ColumnName="EMail_Business" />
+          <ScalarProperty Name="Telephone_Car_Business" ColumnName="Telephone_Car_Business" />
+          <ScalarProperty Name="Telephone_Mobile_Business" ColumnName="Telephone_Mobile_Business" />
+          <ScalarProperty Name="Mail_Drop" ColumnName="Mail_Drop" />
+          <ScalarProperty Name="Special_ID" ColumnName="Special_ID" />
+          <ScalarProperty Name="Rehire_Date" ColumnName="Rehire_Date" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Status_Effective_Date" ColumnName="Status_Effective_Date" />
+          <ScalarProperty Name="I9_Renewal_Date" ColumnName="I9_Renewal_Date" />
+          <ScalarProperty Name="I9_Status" ColumnName="I9_Status" />
+          <ScalarProperty Name="W4_Status" ColumnName="W4_Status" />
+          <ScalarProperty Name="W4_Notes" ColumnName="W4_Notes" />
+          <ScalarProperty Name="W4_Filing_Status" ColumnName="W4_Filing_Status" />
+          <ScalarProperty Name="W4_Exemptions" ColumnName="W4_Exemptions" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="PIEmployee_Number" ColumnName="PIEmployee_Number" />
+          <ScalarProperty Name="Use_Delegate" ColumnName="Use_Delegate" />
+          <ScalarProperty Name="Delegate_To" ColumnName="Delegate_To" />
+          <ScalarProperty Name="Supervisor_Locked" ColumnName="Supervisor_Locked" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Accessible_Employee_Sets">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Accessible_Employee_Sets">
+        <MappingFragment StoreEntitySet="_S_Accessible_Employee_Sets">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Application_User" ColumnName="Application_User" />
+          <ScalarProperty Name="Application_Role" ColumnName="Application_Role" />
+          <ScalarProperty Name="Dictionary_Table" ColumnName="Dictionary_Table" />
+          <ScalarProperty Name="Employee_Set" ColumnName="Employee_Set" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Accessible_Objects">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Accessible_Objects">
+        <MappingFragment StoreEntitySet="_S_Accessible_Objects">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Application_Role" ColumnName="Application_Role" />
+          <ScalarProperty Name="Security_Object" ColumnName="Security_Object" />
+          <ScalarProperty Name="Security_Object_Full_Name" ColumnName="Security_Object_Full_Name" />
+          <ScalarProperty Name="Security_Object_Level" ColumnName="Security_Object_Level" />
+          <ScalarProperty Name="Application" ColumnName="Application" />
+          <ScalarProperty Name="Access_Type" ColumnName="Access_Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Application_Access_Log">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Application_Access_Log">
+        <MappingFragment StoreEntitySet="_S_Application_Access_Log">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Security_Object" ColumnName="Security_Object" />
+          <ScalarProperty Name="Storage" ColumnName="Storage" />
+          <ScalarProperty Name="Employee" ColumnName="Employee" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Application_Errors">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Application_Errors">
+        <MappingFragment StoreEntitySet="_S_Application_Errors">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Form" ColumnName="Form" />
+          <ScalarProperty Name="Query_String" ColumnName="Query_String" />
+          <ScalarProperty Name="Target_Site" ColumnName="Target_Site" />
+          <ScalarProperty Name="Stack_Trace" ColumnName="Stack_Trace" />
+          <ScalarProperty Name="Referer" ColumnName="Referer" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Application_Role_Area_Objects">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Application_Role_Area_Objects">
+        <MappingFragment StoreEntitySet="_S_Application_Role_Area_Objects">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Application_Role" ColumnName="Application_Role" />
+          <ScalarProperty Name="Application" ColumnName="Application" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Security_Object" ColumnName="Security_Object" />
+          <ScalarProperty Name="Access_Type" ColumnName="Access_Type" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Application_Role_Objects">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Application_Role_Objects">
+        <MappingFragment StoreEntitySet="_S_Application_Role_Objects">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Application_Role" ColumnName="Application_Role" />
+          <ScalarProperty Name="Application" ColumnName="Application" />
+          <ScalarProperty Name="Security_Object" ColumnName="Security_Object" />
+          <ScalarProperty Name="Access_Type" ColumnName="Access_Type" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Application_Roles">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Application_Roles">
+        <MappingFragment StoreEntitySet="_S_Application_Roles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Security_Profile" ColumnName="Security_Profile" />
+          <ScalarProperty Name="Application_Theme" ColumnName="Application_Theme" />
+          <ScalarProperty Name="Application_Setting" ColumnName="Application_Setting" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Application_User_Active_Roles">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Application_User_Active_Roles">
+        <MappingFragment StoreEntitySet="_S_Application_User_Active_Roles">
+          <ScalarProperty Name="Session_Id" ColumnName="Session_Id" />
+          <ScalarProperty Name="Application_User" ColumnName="Application_User" />
+          <ScalarProperty Name="Application_Role" ColumnName="Application_Role" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Application_User_Login_Logs">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Application_User_Login_Logs">
+        <MappingFragment StoreEntitySet="_S_Application_User_Login_Logs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Logged" ColumnName="Logged" />
+          <ScalarProperty Name="User_Host_Address" ColumnName="User_Host_Address" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Application_User_Message_Logs">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Application_User_Message_Logs">
+        <MappingFragment StoreEntitySet="_S_Application_User_Message_Logs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Application_User" ColumnName="Application_User" />
+          <ScalarProperty Name="Application_User_Message" ColumnName="Application_User_Message" />
+          <ScalarProperty Name="Delivery_Datetime" ColumnName="Delivery_Datetime" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Application_User_Messages">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Application_User_Messages">
+        <MappingFragment StoreEntitySet="_S_Application_User_Messages">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="From_User" ColumnName="From_User" />
+          <ScalarProperty Name="To_User" ColumnName="To_User" />
+          <ScalarProperty Name="Start_Date" ColumnName="Start_Date" />
+          <ScalarProperty Name="End_Date" ColumnName="End_Date" />
+          <ScalarProperty Name="Workflow_Instance_Step_Message" ColumnName="Workflow_Instance_Step_Message" />
+          <ScalarProperty Name="Unread" ColumnName="Unread" />
+          <ScalarProperty Name="Is_Removable" ColumnName="Is_Removable" />
+          <ScalarProperty Name="Delivery_Receipt" ColumnName="Delivery_Receipt" />
+          <ScalarProperty Name="Is_Deleted" ColumnName="Is_Deleted" />
+          <ScalarProperty Name="Opened_Date" ColumnName="Opened_Date" />
+          <ScalarProperty Name="Deleted_Date" ColumnName="Deleted_Date" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Application_User_Roles">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Application_User_Roles">
+        <MappingFragment StoreEntitySet="_S_Application_User_Roles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Application_User" ColumnName="Application_User" />
+          <ScalarProperty Name="Application_Role" ColumnName="Application_Role" />
+          <ScalarProperty Name="Security_Profile" ColumnName="Security_Profile" />
+          <ScalarProperty Name="Is_Default" ColumnName="Is_Default" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Application_Users">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Application_Users">
+        <MappingFragment StoreEntitySet="_S_Application_Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Salt" ColumnName="Salt" />
+          <ScalarProperty Name="Win_Group_Name" ColumnName="Win_Group_Name" />
+          <ScalarProperty Name="Full_Name" ColumnName="Full_Name" />
+          <ScalarProperty Name="Default_Employee" ColumnName="Default_Employee" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="ReadOnly" ColumnName="ReadOnly" />
+          <ScalarProperty Name="Application_Theme" ColumnName="Application_Theme" />
+          <ScalarProperty Name="First_Logon" ColumnName="First_Logon" />
+          <ScalarProperty Name="Force_Password_Change" ColumnName="Force_Password_Change" />
+          <ScalarProperty Name="Last_Lockout_Date" ColumnName="Last_Lockout_Date" />
+          <ScalarProperty Name="Invalid_Password_Attempts" ColumnName="Invalid_Password_Attempts" />
+          <ScalarProperty Name="Password_Date" ColumnName="Password_Date" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Companies">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Companies">
+        <MappingFragment StoreEntitySet="_S_Companies">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Street_Address_1" ColumnName="Street_Address_1" />
+          <ScalarProperty Name="Street_Address_2" ColumnName="Street_Address_2" />
+          <ScalarProperty Name="City_Town" ColumnName="City_Town" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="Postal_Code" ColumnName="Postal_Code" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Telephone_Area_Code" ColumnName="Telephone_Area_Code" />
+          <ScalarProperty Name="Telephone_Number" ColumnName="Telephone_Number" />
+          <ScalarProperty Name="Facsimile_Area_Code" ColumnName="Facsimile_Area_Code" />
+          <ScalarProperty Name="Facsimile_Number" ColumnName="Facsimile_Number" />
+          <ScalarProperty Name="Telex_Number" ColumnName="Telex_Number" />
+          <ScalarProperty Name="Private_Domain_Name" ColumnName="Private_Domain_Name" />
+          <ScalarProperty Name="Website_URL" ColumnName="Website_URL" />
+          <ScalarProperty Name="Date_Established" ColumnName="Date_Established" />
+          <ScalarProperty Name="Salary_Program" ColumnName="Salary_Program" />
+          <ScalarProperty Name="Performance_Pay" ColumnName="Performance_Pay" />
+          <ScalarProperty Name="Enforce_Work_Rules" ColumnName="Enforce_Work_Rules" />
+          <ScalarProperty Name="Enforce_Org_Integrity" ColumnName="Enforce_Org_Integrity" />
+          <ScalarProperty Name="Max_Hours_Week" ColumnName="Max_Hours_Week" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="TaxId" ColumnName="TaxId" />
+          <ScalarProperty Name="NAICS" ColumnName="NAICS" />
+          <ScalarProperty Name="SIC" ColumnName="SIC" />
+          <ScalarProperty Name="DUNS" ColumnName="DUNS" />
+          <ScalarProperty Name="EEO" ColumnName="EEO" />
+          <ScalarProperty Name="Server_Time_Zone" ColumnName="Server_Time_Zone" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Descriptions">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Descriptions">
+        <MappingFragment StoreEntitySet="_S_Descriptions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Obj" ColumnName="Obj" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="Str" ColumnName="Str" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Error_Table">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Error_Table">
+        <MappingFragment StoreEntitySet="_S_Error_Table">
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="Error_Number" ColumnName="Error_Number" />
+          <ScalarProperty Name="Error_Message" ColumnName="Error_Message" />
+          <ScalarProperty Name="Error_Type" ColumnName="Error_Type" />
+          <ScalarProperty Name="Error_Box_Title" ColumnName="Error_Box_Title" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Languages">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Languages">
+        <MappingFragment StoreEntitySet="_S_Languages">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Security_Employee_Sets">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Security_Employee_Sets">
+        <MappingFragment StoreEntitySet="_S_Security_Employee_Sets">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Security_Objects">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Security_Objects">
+        <MappingFragment StoreEntitySet="_S_Security_Objects">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Parent" ColumnName="Parent" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Help_Id" ColumnName="Help_Id" />
+          <ScalarProperty Name="View_Order" ColumnName="View_Order" />
+          <ScalarProperty Name="Ref_Object" ColumnName="Ref_Object" />
+          <ScalarProperty Name="Is_System_Object" ColumnName="Is_System_Object" />
+          <ScalarProperty Name="Is_Read_Only" ColumnName="Is_Read_Only" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+          <ScalarProperty Name="Inline_CSS" ColumnName="Inline_CSS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Security_Objects_Tree">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Security_Objects_Tree">
+        <MappingFragment StoreEntitySet="_S_Security_Objects_Tree">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="View_Order" ColumnName="View_Order" />
+          <ScalarProperty Name="Ref_Object" ColumnName="Ref_Object" />
+          <ScalarProperty Name="Is_System_Object" ColumnName="Is_System_Object" />
+          <ScalarProperty Name="Is_Read_Only" ColumnName="Is_Read_Only" />
+          <ScalarProperty Name="Full_Name" ColumnName="Full_Name" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Parent" ColumnName="Parent" />
+          <ScalarProperty Name="Help_Id" ColumnName="Help_Id" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Security_Profile_Tables">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Security_Profile_Tables">
+        <MappingFragment StoreEntitySet="_S_Security_Profile_Tables">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Security_Profile" ColumnName="Security_Profile" />
+          <ScalarProperty Name="Dictionary_Table" ColumnName="Dictionary_Table" />
+          <ScalarProperty Name="Sql_Text" ColumnName="Sql_Text" />
+          <ScalarProperty Name="Xml_Text" ColumnName="Xml_Text" />
+          <ScalarProperty Name="Saved_Sql_Expression" ColumnName="Saved_Sql_Expression" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Security_Profiles">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Security_Profiles">
+        <MappingFragment StoreEntitySet="_S_Security_Profiles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Sql_Text" ColumnName="Sql_Text" />
+          <ScalarProperty Name="Xml_Text" ColumnName="Xml_Text" />
+          <ScalarProperty Name="Saved_Sql_Expression" ColumnName="Saved_Sql_Expression" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_Security_Tokens">
+      <EntityTypeMapping TypeName="ASLModel.C_S_Security_Tokens">
+        <MappingFragment StoreEntitySet="_S_Security_Tokens">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Authentication_Ticket" ColumnName="Authentication_Ticket" />
+          <ScalarProperty Name="Expiry" ColumnName="Expiry" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_UT_Workflow_Instance_Schedule_Employees">
+      <EntityTypeMapping TypeName="ASLModel.C_S_UT_Workflow_Instance_Schedule_Employees">
+        <MappingFragment StoreEntitySet="_S_UT_Workflow_Instance_Schedule_Employees">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Schedule" ColumnName="Schedule" />
+          <ScalarProperty Name="Employee" ColumnName="Employee" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_UT_Workflow_Instance_Schedules">
+      <EntityTypeMapping TypeName="ASLModel.C_S_UT_Workflow_Instance_Schedules">
+        <MappingFragment StoreEntitySet="_S_UT_Workflow_Instance_Schedules">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Instance" ColumnName="Instance" />
+          <ScalarProperty Name="Schedule_Type" ColumnName="Schedule_Type" />
+          <ScalarProperty Name="Specific_Date" ColumnName="Specific_Date" />
+          <ScalarProperty Name="Occurance_Number" ColumnName="Occurance_Number" />
+          <ScalarProperty Name="Month_Code" ColumnName="Month_Code" />
+          <ScalarProperty Name="Weekday_Code" ColumnName="Weekday_Code" />
+          <ScalarProperty Name="Day_Code" ColumnName="Day_Code" />
+          <ScalarProperty Name="Dictionary_Field" ColumnName="Dictionary_Field" />
+          <ScalarProperty Name="Days_Offset" ColumnName="Days_Offset" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_UT_Workflow_Instances">
+      <EntityTypeMapping TypeName="ASLModel.C_S_UT_Workflow_Instances">
+        <MappingFragment StoreEntitySet="_S_UT_Workflow_Instances">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Ref_Id" ColumnName="Ref_Id" />
+          <ScalarProperty Name="Started" ColumnName="Started" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_UT_Workflow_Schedule_Employees">
+      <EntityTypeMapping TypeName="ASLModel.C_S_UT_Workflow_Schedule_Employees">
+        <MappingFragment StoreEntitySet="_S_UT_Workflow_Schedule_Employees">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Schedule" ColumnName="Schedule" />
+          <ScalarProperty Name="Employee" ColumnName="Employee" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_UT_Workflow_Schedules">
+      <EntityTypeMapping TypeName="ASLModel.C_S_UT_Workflow_Schedules">
+        <MappingFragment StoreEntitySet="_S_UT_Workflow_Schedules">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Workflow" ColumnName="Workflow" />
+          <ScalarProperty Name="Schedule_Type" ColumnName="Schedule_Type" />
+          <ScalarProperty Name="Specific_Date" ColumnName="Specific_Date" />
+          <ScalarProperty Name="Occurance_Number" ColumnName="Occurance_Number" />
+          <ScalarProperty Name="Month_Code" ColumnName="Month_Code" />
+          <ScalarProperty Name="Weekday_Code" ColumnName="Weekday_Code" />
+          <ScalarProperty Name="Day_Code" ColumnName="Day_Code" />
+          <ScalarProperty Name="Dictionary_Field" ColumnName="Dictionary_Field" />
+          <ScalarProperty Name="Days_Offset" ColumnName="Days_Offset" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_UT_Workflow_Step_Statuses">
+      <EntityTypeMapping TypeName="ASLModel.C_S_UT_Workflow_Step_Statuses">
+        <MappingFragment StoreEntitySet="_S_UT_Workflow_Step_Statuses">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Workflow_Instance" ColumnName="Workflow_Instance" />
+          <ScalarProperty Name="Ref_Id" ColumnName="Ref_Id" />
+          <ScalarProperty Name="Step_Screen" ColumnName="Step_Screen" />
+          <ScalarProperty Name="Step_Number" ColumnName="Step_Number" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_UT_Workflow_Steps">
+      <EntityTypeMapping TypeName="ASLModel.C_S_UT_Workflow_Steps">
+        <MappingFragment StoreEntitySet="_S_UT_Workflow_Steps">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Workflow" ColumnName="Workflow" />
+          <ScalarProperty Name="Step_Screen" ColumnName="Step_Screen" />
+          <ScalarProperty Name="Step_Number" ColumnName="Step_Number" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_UT_Workflow_Task_CheckList_Statuses">
+      <EntityTypeMapping TypeName="ASLModel.C_S_UT_Workflow_Task_CheckList_Statuses">
+        <MappingFragment StoreEntitySet="_S_UT_Workflow_Task_CheckList_Statuses">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Workflow_Instance" ColumnName="Workflow_Instance" />
+          <ScalarProperty Name="Ref_Id" ColumnName="Ref_Id" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="Complete" ColumnName="Complete" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_UT_Workflow_Task_CheckLists">
+      <EntityTypeMapping TypeName="ASLModel.C_S_UT_Workflow_Task_CheckLists">
+        <MappingFragment StoreEntitySet="_S_UT_Workflow_Task_CheckLists">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Workflow_Task" ColumnName="Workflow_Task" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_UT_Workflow_TaskForm_Statuses">
+      <EntityTypeMapping TypeName="ASLModel.C_S_UT_Workflow_TaskForm_Statuses">
+        <MappingFragment StoreEntitySet="_S_UT_Workflow_TaskForm_Statuses">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Workflow_Instance" ColumnName="Workflow_Instance" />
+          <ScalarProperty Name="Ref_Id" ColumnName="Ref_Id" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Subject_Employee_Id" ColumnName="Subject_Employee_Id" />
+          <ScalarProperty Name="Subject_Employee_Name" ColumnName="Subject_Employee_Name" />
+          <ScalarProperty Name="From_Employee_Name" ColumnName="From_Employee_Name" />
+          <ScalarProperty Name="Employee_To" ColumnName="Employee_To" />
+          <ScalarProperty Name="Employee_CC" ColumnName="Employee_CC" />
+          <ScalarProperty Name="Employee_BCC" ColumnName="Employee_BCC" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Message_Box" ColumnName="Message_Box" />
+          <ScalarProperty Name="Escalate_To" ColumnName="Escalate_To" />
+          <ScalarProperty Name="Escalate_After" ColumnName="Escalate_After" />
+          <ScalarProperty Name="Escalate_Timestamp" ColumnName="Escalate_Timestamp" />
+          <ScalarProperty Name="Sign_Off" ColumnName="Sign_Off" />
+          <ScalarProperty Name="Sign_Timestamp" ColumnName="Sign_Timestamp" />
+          <ScalarProperty Name="Cancel_By" ColumnName="Cancel_By" />
+          <ScalarProperty Name="Cancel_Timestamp" ColumnName="Cancel_Timestamp" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_UT_Workflow_TaskForms">
+      <EntityTypeMapping TypeName="ASLModel.C_S_UT_Workflow_TaskForms">
+        <MappingFragment StoreEntitySet="_S_UT_Workflow_TaskForms">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Task" ColumnName="Task" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Subject_Employee_Id" ColumnName="Subject_Employee_Id" />
+          <ScalarProperty Name="Subject_Employee_Name" ColumnName="Subject_Employee_Name" />
+          <ScalarProperty Name="From_Employee_Name" ColumnName="From_Employee_Name" />
+          <ScalarProperty Name="Employee_To" ColumnName="Employee_To" />
+          <ScalarProperty Name="Employee_CC" ColumnName="Employee_CC" />
+          <ScalarProperty Name="Employee_BCC" ColumnName="Employee_BCC" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Message_Box" ColumnName="Message_Box" />
+          <ScalarProperty Name="Escalate_To" ColumnName="Escalate_To" />
+          <ScalarProperty Name="Escalate_After" ColumnName="Escalate_After" />
+          <ScalarProperty Name="Escalate_Timestamp" ColumnName="Escalate_Timestamp" />
+          <ScalarProperty Name="Sign_Off" ColumnName="Sign_Off" />
+          <ScalarProperty Name="Sign_Timestamp" ColumnName="Sign_Timestamp" />
+          <ScalarProperty Name="Cancel_By" ColumnName="Cancel_By" />
+          <ScalarProperty Name="Cancel_Timestamp" ColumnName="Cancel_Timestamp" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_UT_Workflow_Tasks">
+      <EntityTypeMapping TypeName="ASLModel.C_S_UT_Workflow_Tasks">
+        <MappingFragment StoreEntitySet="_S_UT_Workflow_Tasks">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Workflow_Step" ColumnName="Workflow_Step" />
+          <ScalarProperty Name="Task_Number" ColumnName="Task_Number" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C_S_UT_Workflows">
+      <EntityTypeMapping TypeName="ASLModel.C_S_UT_Workflows">
+        <MappingFragment StoreEntitySet="_S_UT_Workflows">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Workflow_Name" ColumnName="Workflow_Name" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="Audit_User" ColumnName="Audit_User" />
+          <ScalarProperty Name="Audit_Date" ColumnName="Audit_Date" />
+          <ScalarProperty Name="Audit_System" ColumnName="Audit_System" />
+          <ScalarProperty Name="Row_Version" ColumnName="Row_Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="C_S_Accessible_Employees" TypeName="ASLModel.C_S_Accessible_Employees" StoreEntitySet="_S_Accessible_Employees">
+      <EndProperty Name="C_S_Security_Employee_Sets">
+        <ScalarProperty Name="Id" ColumnName="Employee_Set" />
+      </EndProperty>
+      <EndProperty Name="C_P_EM_Employees">
+        <ScalarProperty Name="Id" ColumnName="Employee" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

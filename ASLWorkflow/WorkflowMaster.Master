@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WorkflowMaster.master.cs"
+    Inherits="ASLWorkflow.WorkflowMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="Styles/Master.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <table class="tableheader">
+            <tr>
+                <td class="Column1" rowspan="2">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo.gif" />
+                </td>
+                <td class="orangetext">
+                    <asp:Label ID="lblWelcome" runat="server" 
+                        Text="Welcome to the Employee Self Service Portal"></asp:Label>  
+                </td>
+                <td class="columnright">
+                    <asp:Label ID="lblCurrentDateTime" runat="server"></asp:Label>
+                    <asp:Label ID="lblRole" class="orangetext" runat="server" Text="Role:"></asp:Label>
+                    <asp:Label ID="lblRoles" runat="server" Text="Admins"></asp:Label>
+                    &nbsp;
+                    </td>
+            </tr>
+            <tr>
+                <td class="columnright" colspan="3">
+                    <asp:Label ID="Label2" runat="server" Text="Logged in as  :"></asp:Label>
+                    <asp:Label ID="lblLoggedIn" runat="server" Text="Administrator"></asp:Label>
+
+                    <asp:Button ID="btnLogOff" runat="server" Text="Log Off" 
+                        onclick="btnLogOff_Click" />
+                </td>
+            </tr>
+            
+        </table>
+       
+    </asp:ContentPlaceHolder>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <table class="tablefooter">
+        <tr>
+            <td>
+                <asp:Label ID="lblfooter" runat="server" Text="Powered by HR Director"></asp:Label> &copy; 
+                <asp:Label ID="lblDate" runat="server" Text="1998 - 2015,"></asp:Label> <a href="">
+                    <asp:Label ID="lblAsl" runat="server" Text="ASL Consulting."></asp:Label></a>
+                <asp:Label ID="lblCopyright" runat="server" Text="All Rights Reserved."></asp:Label>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

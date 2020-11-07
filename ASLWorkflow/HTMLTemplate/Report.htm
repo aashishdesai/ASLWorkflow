@@ -1,0 +1,524 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <!--<style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 116px;
+            height: 47px;
+        }
+        .style6
+        {
+            width: 22%;
+            height: 79px;
+        }
+        .style7
+        {
+            width: 26%;
+            height: 79px;
+        }
+        .style8
+        {
+            height: 79px;
+        }
+        .style9
+        {
+            width: 22%;
+        }
+        .style10
+        {
+            width: 26%;
+        }
+        .style15
+        {
+            width: 22%;
+            height: 23px;
+        }
+        .style16
+        {
+            height: 23px;
+        }
+        .style17
+        {
+            width: 26%;
+            height: 23px;
+        }
+        .style18
+        {
+            width: 284px;
+            height: 23px;
+        }
+        .style21
+        {
+            width: 284px;
+        }
+        .style22
+        {
+            width: 426px;
+        }
+        .style23
+        {
+            width: 426px;
+            height: 23px;
+        }
+    </style>-->
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <table class="style1">
+            <tr>
+                <td class="style6">
+                 <!--   <img alt="" class="style2"  src="../logo.gif" /></td>-->
+               
+                <td class="style7">
+                </td>
+                <td align="right" class="style8" colspan="2">
+                    ASL Consultings Ltd<br />
+                    Workflow Sandard Report<br />
+                    [CurrentDate]</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    Workflow Name:</td><td>[workflowname]</td>
+                <td class="style22" align="right">
+                    Created:</td>
+                <td class="style21">
+                    [created]</td>
+            </tr>
+            <tr>
+                <td class="style15">
+                    Workflow Status:</td><td class="style16">[workflowstatus]</td>
+                <td class="style23" align="right">
+                    Created by:</td>
+                <td class="style18">
+                    [createdby]</td>
+              
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style15">
+                    Subject Employee ID:</td>
+                <td class="style17">
+                    [subjectid]</td>
+                <td class="style23">
+                    </td>
+                <td class="style18">
+                    </td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    Step Name:</td>
+                <td class="style10">
+                    [stepname]</td>
+                <td class="style22">
+                    Last Updated:</td>
+                <td class="style21">
+                    [lastupdated]</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    Step Status:</td>
+                <td class="style10">
+                    [stepstatus]</td>
+                <td class="style22">
+                    Updated by:</td>
+                <td class="style21">
+                    [updatedby]</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    Task Number:</td>
+                <td class="style10">
+                    [tasknumber]</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    Message FROM:</td>
+                <td class="style10">
+                    [messagefrom]</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    Message TO:</td>
+                <td class="style10">
+                    [messageto]</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    Message CC:</td>
+                <td class="style10">
+                    [messagecc]</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    Message BCC:</td>
+                <td class="style10">
+                    [messagebcc]</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    Message Subject Emp:</td>
+                <td class="style10">
+                    [messagesubject]</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    Task Form Data:</td>
+                <td class="style10">
+                    [taskform]</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    Task Form Status:</td>
+                <td class="style22">
+                    [taskformstatus]</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    Message Box:</td>
+                <td class="style22">
+                    Instructions
+                </td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    Click on link</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    Click on link&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    Link to Workflow Task Form Screen</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    Escalate To:&nbsp;&nbsp; [Escalateto]</td>
+                <td align="right" class="style22">
+                    Escalate After</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td align="right" class="style22">
+                    Timestamp:</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    Completed Sign Off:&nbsp;
+                    [signoff]</td>
+                <td align="right" class="style22">
+                    Timestamp:</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    Administrator Cancel:&nbsp; [cancel]</td>
+                <td align="right" class="style22">
+                    Timestamp:</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    Checklist Data:</td>
+                <td class="style10">
+                    CheckBox:</td>
+                <td class="style22">
+                    Description:</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9">
+                    &nbsp;</td>
+                <td class="style10">
+                    &nbsp;</td>
+                <td class="style22">
+                    &nbsp;</td>
+                <td class="style21">
+                    &nbsp;</td>
+            </tr>
+        </table>
+        
+    </div>
+    </form>
+</body>
+</html>

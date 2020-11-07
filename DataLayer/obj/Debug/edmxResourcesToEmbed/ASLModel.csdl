@@ -1,0 +1,1513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ASLModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="ASLEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C_C_UT_Codes" EntityType="ASLModel.C_C_UT_Codes" />
+    <EntitySet Name="C_H_EM_Employees" EntityType="ASLModel.C_H_EM_Employees" />
+    <EntitySet Name="C_H_UT_Codes" EntityType="ASLModel.C_H_UT_Codes" />
+    <EntitySet Name="C_P_EM_Employees" EntityType="ASLModel.C_P_EM_Employees" />
+    <EntitySet Name="C_S_Accessible_Employee_Sets" EntityType="ASLModel.C_S_Accessible_Employee_Sets" />
+    <EntitySet Name="C_S_Accessible_Objects" EntityType="ASLModel.C_S_Accessible_Objects" />
+    <EntitySet Name="C_S_Application_Access_Log" EntityType="ASLModel.C_S_Application_Access_Log" />
+    <EntitySet Name="C_S_Application_Errors" EntityType="ASLModel.C_S_Application_Errors" />
+    <EntitySet Name="C_S_Application_Role_Area_Objects" EntityType="ASLModel.C_S_Application_Role_Area_Objects" />
+    <EntitySet Name="C_S_Application_Role_Objects" EntityType="ASLModel.C_S_Application_Role_Objects" />
+    <EntitySet Name="C_S_Application_Roles" EntityType="ASLModel.C_S_Application_Roles" />
+    <EntitySet Name="C_S_Application_User_Active_Roles" EntityType="ASLModel.C_S_Application_User_Active_Roles" />
+    <EntitySet Name="C_S_Application_User_Login_Logs" EntityType="ASLModel.C_S_Application_User_Login_Logs" />
+    <EntitySet Name="C_S_Application_User_Message_Logs" EntityType="ASLModel.C_S_Application_User_Message_Logs" />
+    <EntitySet Name="C_S_Application_User_Messages" EntityType="ASLModel.C_S_Application_User_Messages" />
+    <EntitySet Name="C_S_Application_User_Roles" EntityType="ASLModel.C_S_Application_User_Roles" />
+    <EntitySet Name="C_S_Application_Users" EntityType="ASLModel.C_S_Application_Users" />
+    <EntitySet Name="C_S_Companies" EntityType="ASLModel.C_S_Companies" />
+    <EntitySet Name="C_S_Descriptions" EntityType="ASLModel.C_S_Descriptions" />
+    <EntitySet Name="C_S_Error_Table" EntityType="ASLModel.C_S_Error_Table" />
+    <EntitySet Name="C_S_Languages" EntityType="ASLModel.C_S_Languages" />
+    <EntitySet Name="C_S_Security_Employee_Sets" EntityType="ASLModel.C_S_Security_Employee_Sets" />
+    <EntitySet Name="C_S_Security_Objects" EntityType="ASLModel.C_S_Security_Objects" />
+    <EntitySet Name="C_S_Security_Objects_Tree" EntityType="ASLModel.C_S_Security_Objects_Tree" />
+    <EntitySet Name="C_S_Security_Profile_Tables" EntityType="ASLModel.C_S_Security_Profile_Tables" />
+    <EntitySet Name="C_S_Security_Profiles" EntityType="ASLModel.C_S_Security_Profiles" />
+    <EntitySet Name="C_S_Security_Tokens" EntityType="ASLModel.C_S_Security_Tokens" />
+    <EntitySet Name="C_S_UT_Workflow_Instance_Schedule_Employees" EntityType="ASLModel.C_S_UT_Workflow_Instance_Schedule_Employees" />
+    <EntitySet Name="C_S_UT_Workflow_Instance_Schedules" EntityType="ASLModel.C_S_UT_Workflow_Instance_Schedules" />
+    <EntitySet Name="C_S_UT_Workflow_Instances" EntityType="ASLModel.C_S_UT_Workflow_Instances" />
+    <EntitySet Name="C_S_UT_Workflow_Schedule_Employees" EntityType="ASLModel.C_S_UT_Workflow_Schedule_Employees" />
+    <EntitySet Name="C_S_UT_Workflow_Schedules" EntityType="ASLModel.C_S_UT_Workflow_Schedules" />
+    <EntitySet Name="C_S_UT_Workflow_Step_Statuses" EntityType="ASLModel.C_S_UT_Workflow_Step_Statuses" />
+    <EntitySet Name="C_S_UT_Workflow_Steps" EntityType="ASLModel.C_S_UT_Workflow_Steps" />
+    <EntitySet Name="C_S_UT_Workflow_Task_CheckList_Statuses" EntityType="ASLModel.C_S_UT_Workflow_Task_CheckList_Statuses" />
+    <EntitySet Name="C_S_UT_Workflow_Task_CheckLists" EntityType="ASLModel.C_S_UT_Workflow_Task_CheckLists" />
+    <EntitySet Name="C_S_UT_Workflow_TaskForm_Statuses" EntityType="ASLModel.C_S_UT_Workflow_TaskForm_Statuses" />
+    <EntitySet Name="C_S_UT_Workflow_TaskForms" EntityType="ASLModel.C_S_UT_Workflow_TaskForms" />
+    <EntitySet Name="C_S_UT_Workflow_Tasks" EntityType="ASLModel.C_S_UT_Workflow_Tasks" />
+    <EntitySet Name="C_S_UT_Workflows" EntityType="ASLModel.C_S_UT_Workflows" />
+    <AssociationSet Name="C_S_Companies__S_Codes_FK1" Association="ASLModel.C_S_Companies__S_Codes_FK1">
+      <End Role="C_S_Companies" EntitySet="C_S_Companies" />
+      <End Role="C_C_UT_Codes" EntitySet="C_C_UT_Codes" />
+    </AssociationSet>
+    <AssociationSet Name="C_S_Languages__S_Codes_FK1" Association="ASLModel.C_S_Languages__S_Codes_FK1">
+      <End Role="C_S_Languages" EntitySet="C_S_Languages" />
+      <End Role="C_C_UT_Codes" EntitySet="C_C_UT_Codes" />
+    </AssociationSet>
+    <AssociationSet Name="C_S_Companies__P_EM_Employees_FK1" Association="ASLModel.C_S_Companies__P_EM_Employees_FK1">
+      <End Role="C_S_Companies" EntitySet="C_S_Companies" />
+      <End Role="C_P_EM_Employees" EntitySet="C_P_EM_Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK__P_EM_Employees__P_EM_Employees" Association="ASLModel.FK__P_EM_Employees__P_EM_Employees">
+      <End Role="C_P_EM_Employees" EntitySet="C_P_EM_Employees" />
+      <End Role="C_P_EM_Employees1" EntitySet="C_P_EM_Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Accessible_Employee_Sets__S_Application_Roles" Association="ASLModel.FK__S_Accessible_Employee_Sets__S_Application_Roles">
+      <End Role="C_S_Application_Roles" EntitySet="C_S_Application_Roles" />
+      <End Role="C_S_Accessible_Employee_Sets" EntitySet="C_S_Accessible_Employee_Sets" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Accessible_Employee_Sets__S_Application_Users" Association="ASLModel.FK__S_Accessible_Employee_Sets__S_Application_Users">
+      <End Role="C_S_Application_Users" EntitySet="C_S_Application_Users" />
+      <End Role="C_S_Accessible_Employee_Sets" EntitySet="C_S_Accessible_Employee_Sets" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Accessible_Employee_Sets__S_Security_Employee_Sets" Association="ASLModel.FK__S_Accessible_Employee_Sets__S_Security_Employee_Sets">
+      <End Role="C_S_Security_Employee_Sets" EntitySet="C_S_Security_Employee_Sets" />
+      <End Role="C_S_Accessible_Employee_Sets" EntitySet="C_S_Accessible_Employee_Sets" />
+    </AssociationSet>
+    <AssociationSet Name="C_S_Security_Objects__S_Accessible_Objects_FK1" Association="ASLModel.C_S_Security_Objects__S_Accessible_Objects_FK1">
+      <End Role="C_S_Security_Objects" EntitySet="C_S_Security_Objects" />
+      <End Role="C_S_Accessible_Objects" EntitySet="C_S_Accessible_Objects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Accessible_Objects__S_Application_Roles" Association="ASLModel.FK__S_Accessible_Objects__S_Application_Roles">
+      <End Role="C_S_Application_Roles" EntitySet="C_S_Application_Roles" />
+      <End Role="C_S_Accessible_Objects" EntitySet="C_S_Accessible_Objects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_Role_Area_Objects__S_Application_Roles" Association="ASLModel.FK__S_Application_Role_Area_Objects__S_Application_Roles">
+      <End Role="C_S_Application_Roles" EntitySet="C_S_Application_Roles" />
+      <End Role="C_S_Application_Role_Area_Objects" EntitySet="C_S_Application_Role_Area_Objects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_Role_Area_Objects__S_Security_Objects" Association="ASLModel.FK__S_Application_Role_Area_Objects__S_Security_Objects">
+      <End Role="C_S_Security_Objects" EntitySet="C_S_Security_Objects" />
+      <End Role="C_S_Application_Role_Area_Objects" EntitySet="C_S_Application_Role_Area_Objects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_Role_Area_Objects__S_Security_Objects1" Association="ASLModel.FK__S_Application_Role_Area_Objects__S_Security_Objects1">
+      <End Role="C_S_Security_Objects" EntitySet="C_S_Security_Objects" />
+      <End Role="C_S_Application_Role_Area_Objects" EntitySet="C_S_Application_Role_Area_Objects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_Role_Objects__S_Application_Roles" Association="ASLModel.FK__S_Application_Role_Objects__S_Application_Roles">
+      <End Role="C_S_Application_Roles" EntitySet="C_S_Application_Roles" />
+      <End Role="C_S_Application_Role_Objects" EntitySet="C_S_Application_Role_Objects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_Role_Objects__S_Security_Objects" Association="ASLModel.FK__S_Application_Role_Objects__S_Security_Objects">
+      <End Role="C_S_Security_Objects" EntitySet="C_S_Security_Objects" />
+      <End Role="C_S_Application_Role_Objects" EntitySet="C_S_Application_Role_Objects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_Roles__S_Security_Profiles" Association="ASLModel.FK__S_Application_Roles__S_Security_Profiles">
+      <End Role="C_S_Security_Profiles" EntitySet="C_S_Security_Profiles" />
+      <End Role="C_S_Application_Roles" EntitySet="C_S_Application_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_User_Roles__S_Application_Roles" Association="ASLModel.FK__S_Application_User_Roles__S_Application_Roles">
+      <End Role="C_S_Application_Roles" EntitySet="C_S_Application_Roles" />
+      <End Role="C_S_Application_User_Roles" EntitySet="C_S_Application_User_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_User_Messages__S_Application_Users" Association="ASLModel.FK__S_Application_User_Messages__S_Application_Users">
+      <End Role="C_S_Application_Users" EntitySet="C_S_Application_Users" />
+      <End Role="C_S_Application_User_Messages" EntitySet="C_S_Application_User_Messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_User_Messages__S_Application_Users1" Association="ASLModel.FK__S_Application_User_Messages__S_Application_Users1">
+      <End Role="C_S_Application_Users" EntitySet="C_S_Application_Users" />
+      <End Role="C_S_Application_User_Messages" EntitySet="C_S_Application_User_Messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_User_Roles__S_Application_Users" Association="ASLModel.FK__S_Application_User_Roles__S_Application_Users">
+      <End Role="C_S_Application_Users" EntitySet="C_S_Application_Users" />
+      <End Role="C_S_Application_User_Roles" EntitySet="C_S_Application_User_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_User_Roles__S_Security_Profiles" Association="ASLModel.FK__S_Application_User_Roles__S_Security_Profiles">
+      <End Role="C_S_Security_Profiles" EntitySet="C_S_Security_Profiles" />
+      <End Role="C_S_Application_User_Roles" EntitySet="C_S_Application_User_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="C_S_Languages__S_Descriptions_FK1" Association="ASLModel.C_S_Languages__S_Descriptions_FK1">
+      <End Role="C_S_Languages" EntitySet="C_S_Languages" />
+      <End Role="C_S_Descriptions" EntitySet="C_S_Descriptions" />
+    </AssociationSet>
+    <AssociationSet Name="C_S_Security_Objects__S_Security_Objects_FK1" Association="ASLModel.C_S_Security_Objects__S_Security_Objects_FK1">
+      <End Role="C_S_Security_Objects" EntitySet="C_S_Security_Objects" />
+      <End Role="C_S_Security_Objects1" EntitySet="C_S_Security_Objects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Security_Profile_Tables__S_Security_Profiles" Association="ASLModel.FK__S_Security_Profile_Tables__S_Security_Profiles">
+      <End Role="C_S_Security_Profiles" EntitySet="C_S_Security_Profiles" />
+      <End Role="C_S_Security_Profile_Tables" EntitySet="C_S_Security_Profile_Tables" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Instance_Schedule_Employees__S_UT_Workflow_Instance_Schedules" Association="ASLModel.FK__S_UT_Workflow_Instance_Schedule_Employees__S_UT_Workflow_Instance_Schedules">
+      <End Role="C_S_UT_Workflow_Instance_Schedules" EntitySet="C_S_UT_Workflow_Instance_Schedules" />
+      <End Role="C_S_UT_Workflow_Instance_Schedule_Employees" EntitySet="C_S_UT_Workflow_Instance_Schedule_Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Instance_Schedules__S_UT_Workflow_Instances" Association="ASLModel.FK__S_UT_Workflow_Instance_Schedules__S_UT_Workflow_Instances">
+      <End Role="C_S_UT_Workflow_Instances" EntitySet="C_S_UT_Workflow_Instances" />
+      <End Role="C_S_UT_Workflow_Instance_Schedules" EntitySet="C_S_UT_Workflow_Instance_Schedules" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Instances__S_UT_Workflow_Task_CheckList_Statuses" Association="ASLModel.FK__S_UT_Workflow_Instances__S_UT_Workflow_Task_CheckList_Statuses">
+      <End Role="C_S_UT_Workflow_Task_CheckList_Statuses" EntitySet="C_S_UT_Workflow_Task_CheckList_Statuses" />
+      <End Role="C_S_UT_Workflow_Instances" EntitySet="C_S_UT_Workflow_Instances" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Step_Statuses__S_UT_Workflow_Instances" Association="ASLModel.FK__S_UT_Workflow_Step_Statuses__S_UT_Workflow_Instances">
+      <End Role="C_S_UT_Workflow_Instances" EntitySet="C_S_UT_Workflow_Instances" />
+      <End Role="C_S_UT_Workflow_Step_Statuses" EntitySet="C_S_UT_Workflow_Step_Statuses" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_TaskForm_Statuses__S_UT_Workflow_Instances" Association="ASLModel.FK__S_UT_Workflow_TaskForm_Statuses__S_UT_Workflow_Instances">
+      <End Role="C_S_UT_Workflow_Instances" EntitySet="C_S_UT_Workflow_Instances" />
+      <End Role="C_S_UT_Workflow_TaskForm_Statuses" EntitySet="C_S_UT_Workflow_TaskForm_Statuses" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Schedule_Employees__S_UT_Workflow_Schedules" Association="ASLModel.FK__S_UT_Workflow_Schedule_Employees__S_UT_Workflow_Schedules">
+      <End Role="C_S_UT_Workflow_Schedules" EntitySet="C_S_UT_Workflow_Schedules" />
+      <End Role="C_S_UT_Workflow_Schedule_Employees" EntitySet="C_S_UT_Workflow_Schedule_Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Schedules__S_UT_Workflows" Association="ASLModel.FK__S_UT_Workflow_Schedules__S_UT_Workflows">
+      <End Role="C_S_UT_Workflows" EntitySet="C_S_UT_Workflows" />
+      <End Role="C_S_UT_Workflow_Schedules" EntitySet="C_S_UT_Workflow_Schedules" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Steps__S_UT_Workflows" Association="ASLModel.FK__S_UT_Workflow_Steps__S_UT_Workflows">
+      <End Role="C_S_UT_Workflows" EntitySet="C_S_UT_Workflows" />
+      <End Role="C_S_UT_Workflow_Steps" EntitySet="C_S_UT_Workflow_Steps" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Tasks__S_UT_Workflow_Steps" Association="ASLModel.FK__S_UT_Workflow_Tasks__S_UT_Workflow_Steps">
+      <End Role="C_S_UT_Workflow_Steps" EntitySet="C_S_UT_Workflow_Steps" />
+      <End Role="C_S_UT_Workflow_Tasks" EntitySet="C_S_UT_Workflow_Tasks" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Task_CheckList__S_UT_Workflow_Tasks" Association="ASLModel.FK__S_UT_Workflow_Task_CheckList__S_UT_Workflow_Tasks">
+      <End Role="C_S_UT_Workflow_Tasks" EntitySet="C_S_UT_Workflow_Tasks" />
+      <End Role="C_S_UT_Workflow_Task_CheckLists" EntitySet="C_S_UT_Workflow_Task_CheckLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_TaskForms__S_UT_Workflow_Tasks" Association="ASLModel.FK__S_UT_Workflow_TaskForms__S_UT_Workflow_Tasks">
+      <End Role="C_S_UT_Workflow_Tasks" EntitySet="C_S_UT_Workflow_Tasks" />
+      <End Role="C_S_UT_Workflow_TaskForms" EntitySet="C_S_UT_Workflow_TaskForms" />
+    </AssociationSet>
+    <AssociationSet Name="C_S_Accessible_Employees" Association="ASLModel.C_S_Accessible_Employees">
+      <End Role="C_S_Security_Employee_Sets" EntitySet="C_S_Security_Employee_Sets" />
+      <End Role="C_P_EM_Employees" EntitySet="C_P_EM_Employees" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="C_C_UT_Codes">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="Company" />
+      <PropertyRef Name="Language" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Company" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Language" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Inactive" Type="Boolean" Nullable="false" />
+    <Property Name="Is_System" Type="Boolean" Nullable="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_Companies" Relationship="ASLModel.C_S_Companies__S_Codes_FK1" FromRole="C_C_UT_Codes" ToRole="C_S_Companies" />
+    <NavigationProperty Name="C_S_Languages" Relationship="ASLModel.C_S_Languages__S_Codes_FK1" FromRole="C_C_UT_Codes" ToRole="C_S_Languages" />
+  </EntityType>
+  <EntityType Name="C_H_EM_Employees">
+    <Key>
+      <PropertyRef Name="C_Id" />
+    </Key>
+    <Property Name="C_Id" Type="Guid" Nullable="false" />
+    <Property Name="Id" Type="Guid" />
+    <Property Name="Number" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Company" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Department" Type="Guid" />
+    <Property Name="Position" Type="Guid" />
+    <Property Name="Supervisor" Type="Guid" />
+    <Property Name="Date_of_Hire" Type="DateTime" />
+    <Property Name="Seniority_Date" Type="DateTime" />
+    <Property Name="Expatriate" Type="Boolean" Nullable="false" />
+    <Property Name="Expatriate_Country" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Visa_Type" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Visa_Effective" Type="DateTime" />
+    <Property Name="Visa_Expiry" Type="DateTime" />
+    <Property Name="Preferred_Language" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Other_Language" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Salutation" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Name_Suffix" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="First_Name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Middle_Name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Last_Name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Maiden_Name" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Preferred_Name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Sex" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Married" Type="Boolean" Nullable="false" />
+    <Property Name="Marital_Status" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Spouse_First_Name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Spouse_Middle_Name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Spouse_Last_Name" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Spouse_SIN" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="Spouse_SSN_Number" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="Spouse_National_Number" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="Spouse_Sex" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Spouse_DOB" Type="DateTime" />
+    <Property Name="Address_Street_Number" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Address_City_Town" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="Address_Province_State" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Address_Country" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Postal_Code" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Facsimile" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="EMail" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone_Car" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone_Mobile" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_Street_Number" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_City_Town" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_Province_State" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_Country" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_Postal_Code" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_Telephone" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_Facsimile" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_EMail" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_Telephone_Car" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_Telephone_Mobile" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Date_of_Birth" Type="DateTime" />
+    <Property Name="Date_Deceased" Type="DateTime" />
+    <Property Name="Sin_Number" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="SSN_Number" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="National_Number" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="Citizenship" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone_Business" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Extension" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Facsimile_Business" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="EMail_Business" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone_Car_Business" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone_Mobile_Business" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Mail_Drop" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Special_ID" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Rehire_Date" Type="DateTime" />
+    <Property Name="Status" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Status_Effective_Date" Type="DateTime" />
+    <Property Name="I9_Renewal_Date" Type="DateTime" />
+    <Property Name="I9_Status" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="W4_Status" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="W4_Notes" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="W4_Filing_Status" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="W4_Exemptions" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="PIEmployee_Number" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Use_Delegate" Type="Boolean" />
+    <Property Name="Delegate_To" Type="Guid" />
+    <Property Name="Supervisor_Locked" Type="Boolean" Nullable="false" />
+    <Property Name="Inactive" Type="Boolean" Nullable="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="C_H_UT_Codes">
+    <Key>
+      <PropertyRef Name="C_Id" />
+    </Key>
+    <Property Name="C_Id" Type="Guid" Nullable="false" />
+    <Property Name="Id" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Type" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Company" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Language" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Inactive" Type="Boolean" Nullable="false" />
+    <Property Name="Is_System" Type="Boolean" Nullable="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="C_P_EM_Employees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Number" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Company" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Department" Type="Guid" />
+    <Property Name="Position" Type="Guid" />
+    <Property Name="Supervisor" Type="Guid" />
+    <Property Name="Date_of_Hire" Type="DateTime" />
+    <Property Name="Seniority_Date" Type="DateTime" />
+    <Property Name="Expatriate" Type="Boolean" Nullable="false" />
+    <Property Name="Expatriate_Country" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Visa_Type" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Visa_Effective" Type="DateTime" />
+    <Property Name="Visa_Expiry" Type="DateTime" />
+    <Property Name="Preferred_Language" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Other_Language" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Salutation" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Name_Suffix" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="First_Name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Middle_Name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Last_Name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Maiden_Name" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Preferred_Name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Sex" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Married" Type="Boolean" Nullable="false" />
+    <Property Name="Marital_Status" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Spouse_First_Name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Spouse_Middle_Name" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Spouse_Last_Name" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Spouse_SIN" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="Spouse_SSN_Number" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="Spouse_National_Number" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="Spouse_Sex" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Spouse_DOB" Type="DateTime" />
+    <Property Name="Address_Street_Number" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Address_City_Town" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="Address_Province_State" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Address_Country" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Postal_Code" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Facsimile" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="EMail" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone_Car" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone_Mobile" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_Street_Number" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_City_Town" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_Province_State" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_Country" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_Postal_Code" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_Telephone" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_Facsimile" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_EMail" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_Telephone_Car" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Alternate_Telephone_Mobile" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Date_of_Birth" Type="DateTime" />
+    <Property Name="Date_Deceased" Type="DateTime" />
+    <Property Name="Sin_Number" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="SSN_Number" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="National_Number" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="Citizenship" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone_Business" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Extension" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Facsimile_Business" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="EMail_Business" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone_Car_Business" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone_Mobile_Business" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Mail_Drop" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Special_ID" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Rehire_Date" Type="DateTime" />
+    <Property Name="Status" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Status_Effective_Date" Type="DateTime" />
+    <Property Name="I9_Renewal_Date" Type="DateTime" />
+    <Property Name="I9_Status" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="W4_Status" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="W4_Notes" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="W4_Filing_Status" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="W4_Exemptions" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="PIEmployee_Number" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Use_Delegate" Type="Boolean" />
+    <Property Name="Delegate_To" Type="Guid" />
+    <Property Name="Supervisor_Locked" Type="Boolean" Nullable="false" />
+    <Property Name="Inactive" Type="Boolean" Nullable="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_Companies" Relationship="ASLModel.C_S_Companies__P_EM_Employees_FK1" FromRole="C_P_EM_Employees" ToRole="C_S_Companies" />
+    <NavigationProperty Name="C_P_EM_Employees1" Relationship="ASLModel.FK__P_EM_Employees__P_EM_Employees" FromRole="C_P_EM_Employees" ToRole="C_P_EM_Employees1" />
+    <NavigationProperty Name="C_P_EM_Employees2" Relationship="ASLModel.FK__P_EM_Employees__P_EM_Employees" FromRole="C_P_EM_Employees1" ToRole="C_P_EM_Employees" />
+    <NavigationProperty Name="C_S_Security_Employee_Sets" Relationship="ASLModel.C_S_Accessible_Employees" FromRole="C_P_EM_Employees" ToRole="C_S_Security_Employee_Sets" />
+  </EntityType>
+  <EntityType Name="C_S_Accessible_Employee_Sets">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Application_User" Type="Guid" Nullable="false" />
+    <Property Name="Application_Role" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Dictionary_Table" Type="Guid" />
+    <Property Name="Employee_Set" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="C_S_Application_Roles" Relationship="ASLModel.FK__S_Accessible_Employee_Sets__S_Application_Roles" FromRole="C_S_Accessible_Employee_Sets" ToRole="C_S_Application_Roles" />
+    <NavigationProperty Name="C_S_Application_Users" Relationship="ASLModel.FK__S_Accessible_Employee_Sets__S_Application_Users" FromRole="C_S_Accessible_Employee_Sets" ToRole="C_S_Application_Users" />
+    <NavigationProperty Name="C_S_Security_Employee_Sets" Relationship="ASLModel.FK__S_Accessible_Employee_Sets__S_Security_Employee_Sets" FromRole="C_S_Accessible_Employee_Sets" ToRole="C_S_Security_Employee_Sets" />
+  </EntityType>
+  <EntityType Name="C_S_Accessible_Objects">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Application_Role" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Security_Object" Type="Guid" Nullable="false" />
+    <Property Name="Security_Object_Full_Name" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="Security_Object_Level" Type="Int32" Nullable="false" />
+    <Property Name="Application" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Access_Type" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="C_S_Security_Objects" Relationship="ASLModel.C_S_Security_Objects__S_Accessible_Objects_FK1" FromRole="C_S_Accessible_Objects" ToRole="C_S_Security_Objects" />
+    <NavigationProperty Name="C_S_Application_Roles" Relationship="ASLModel.FK__S_Accessible_Objects__S_Application_Roles" FromRole="C_S_Accessible_Objects" ToRole="C_S_Application_Roles" />
+  </EntityType>
+  <EntityType Name="C_S_Application_Access_Log">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Security_Object" Type="Guid" />
+    <Property Name="Storage" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Employee" Type="Guid" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="C_S_Application_Errors">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Source" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Message" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="Form" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Query_String" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Target_Site" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Stack_Trace" Type="String" MaxLength="4000" Unicode="false" FixedLength="false" />
+    <Property Name="Referer" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="C_S_Application_Role_Area_Objects">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Application_Role" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Application" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Area" Type="Guid" Nullable="false" />
+    <Property Name="Security_Object" Type="Guid" Nullable="false" />
+    <Property Name="Access_Type" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_Application_Roles" Relationship="ASLModel.FK__S_Application_Role_Area_Objects__S_Application_Roles" FromRole="C_S_Application_Role_Area_Objects" ToRole="C_S_Application_Roles" />
+    <NavigationProperty Name="C_S_Security_Objects" Relationship="ASLModel.FK__S_Application_Role_Area_Objects__S_Security_Objects" FromRole="C_S_Application_Role_Area_Objects" ToRole="C_S_Security_Objects" />
+    <NavigationProperty Name="C_S_Security_Objects1" Relationship="ASLModel.FK__S_Application_Role_Area_Objects__S_Security_Objects1" FromRole="C_S_Application_Role_Area_Objects" ToRole="C_S_Security_Objects" />
+  </EntityType>
+  <EntityType Name="C_S_Application_Role_Objects">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Application_Role" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Application" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Security_Object" Type="Guid" Nullable="false" />
+    <Property Name="Access_Type" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Condition" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_Application_Roles" Relationship="ASLModel.FK__S_Application_Role_Objects__S_Application_Roles" FromRole="C_S_Application_Role_Objects" ToRole="C_S_Application_Roles" />
+    <NavigationProperty Name="C_S_Security_Objects" Relationship="ASLModel.FK__S_Application_Role_Objects__S_Security_Objects" FromRole="C_S_Application_Role_Objects" ToRole="C_S_Security_Objects" />
+  </EntityType>
+  <EntityType Name="C_S_Application_Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Security_Profile" Type="Guid" Nullable="false" />
+    <Property Name="Application_Theme" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Application_Setting" Type="Guid" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_Accessible_Employee_Sets" Relationship="ASLModel.FK__S_Accessible_Employee_Sets__S_Application_Roles" FromRole="C_S_Application_Roles" ToRole="C_S_Accessible_Employee_Sets" />
+    <NavigationProperty Name="C_S_Accessible_Objects" Relationship="ASLModel.FK__S_Accessible_Objects__S_Application_Roles" FromRole="C_S_Application_Roles" ToRole="C_S_Accessible_Objects" />
+    <NavigationProperty Name="C_S_Application_Role_Area_Objects" Relationship="ASLModel.FK__S_Application_Role_Area_Objects__S_Application_Roles" FromRole="C_S_Application_Roles" ToRole="C_S_Application_Role_Area_Objects" />
+    <NavigationProperty Name="C_S_Application_Role_Objects" Relationship="ASLModel.FK__S_Application_Role_Objects__S_Application_Roles" FromRole="C_S_Application_Roles" ToRole="C_S_Application_Role_Objects" />
+    <NavigationProperty Name="C_S_Security_Profiles" Relationship="ASLModel.FK__S_Application_Roles__S_Security_Profiles" FromRole="C_S_Application_Roles" ToRole="C_S_Security_Profiles" />
+    <NavigationProperty Name="C_S_Application_User_Roles" Relationship="ASLModel.FK__S_Application_User_Roles__S_Application_Roles" FromRole="C_S_Application_Roles" ToRole="C_S_Application_User_Roles" />
+  </EntityType>
+  <EntityType Name="C_S_Application_User_Active_Roles">
+    <Key>
+      <PropertyRef Name="Session_Id" />
+    </Key>
+    <Property Name="Session_Id" Type="String" Nullable="false" MaxLength="24" Unicode="false" FixedLength="false" />
+    <Property Name="Application_User" Type="Guid" Nullable="false" />
+    <Property Name="Application_Role" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="C_S_Application_User_Login_Logs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Login" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Logged" Type="DateTime" Nullable="false" />
+    <Property Name="User_Host_Address" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="C_S_Application_User_Message_Logs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Application_User" Type="Guid" Nullable="false" />
+    <Property Name="Application_User_Message" Type="Guid" Nullable="false" />
+    <Property Name="Delivery_Datetime" Type="DateTime" Nullable="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="C_S_Application_User_Messages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="From_User" Type="Guid" Nullable="false" />
+    <Property Name="To_User" Type="Guid" />
+    <Property Name="Start_Date" Type="DateTime" />
+    <Property Name="End_Date" Type="DateTime" />
+    <Property Name="Workflow_Instance_Step_Message" Type="Guid" />
+    <Property Name="Unread" Type="Boolean" Nullable="false" />
+    <Property Name="Is_Removable" Type="Boolean" Nullable="false" />
+    <Property Name="Delivery_Receipt" Type="Boolean" Nullable="false" />
+    <Property Name="Is_Deleted" Type="Boolean" Nullable="false" />
+    <Property Name="Opened_Date" Type="DateTime" />
+    <Property Name="Deleted_Date" Type="DateTime" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_Application_Users" Relationship="ASLModel.FK__S_Application_User_Messages__S_Application_Users" FromRole="C_S_Application_User_Messages" ToRole="C_S_Application_Users" />
+    <NavigationProperty Name="C_S_Application_Users1" Relationship="ASLModel.FK__S_Application_User_Messages__S_Application_Users1" FromRole="C_S_Application_User_Messages" ToRole="C_S_Application_Users" />
+  </EntityType>
+  <EntityType Name="C_S_Application_User_Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Application_User" Type="Guid" Nullable="false" />
+    <Property Name="Application_Role" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Security_Profile" Type="Guid" />
+    <Property Name="Is_Default" Type="Boolean" Nullable="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_Application_Roles" Relationship="ASLModel.FK__S_Application_User_Roles__S_Application_Roles" FromRole="C_S_Application_User_Roles" ToRole="C_S_Application_Roles" />
+    <NavigationProperty Name="C_S_Application_Users" Relationship="ASLModel.FK__S_Application_User_Roles__S_Application_Users" FromRole="C_S_Application_User_Roles" ToRole="C_S_Application_Users" />
+    <NavigationProperty Name="C_S_Security_Profiles" Relationship="ASLModel.FK__S_Application_User_Roles__S_Security_Profiles" FromRole="C_S_Application_User_Roles" ToRole="C_S_Security_Profiles" />
+  </EntityType>
+  <EntityType Name="C_S_Application_Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Company" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Login" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Salt" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Win_Group_Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Full_Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Default_Employee" Type="Guid" />
+    <Property Name="Email" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Inactive" Type="Boolean" Nullable="false" />
+    <Property Name="Locked" Type="Boolean" Nullable="false" />
+    <Property Name="ReadOnly" Type="Boolean" Nullable="false" />
+    <Property Name="Application_Theme" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="First_Logon" Type="Boolean" Nullable="false" />
+    <Property Name="Force_Password_Change" Type="Boolean" Nullable="false" />
+    <Property Name="Last_Lockout_Date" Type="DateTime" />
+    <Property Name="Invalid_Password_Attempts" Type="Int32" Nullable="false" />
+    <Property Name="Password_Date" Type="DateTime" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_Accessible_Employee_Sets" Relationship="ASLModel.FK__S_Accessible_Employee_Sets__S_Application_Users" FromRole="C_S_Application_Users" ToRole="C_S_Accessible_Employee_Sets" />
+    <NavigationProperty Name="C_S_Application_User_Messages" Relationship="ASLModel.FK__S_Application_User_Messages__S_Application_Users" FromRole="C_S_Application_Users" ToRole="C_S_Application_User_Messages" />
+    <NavigationProperty Name="C_S_Application_User_Messages1" Relationship="ASLModel.FK__S_Application_User_Messages__S_Application_Users1" FromRole="C_S_Application_Users" ToRole="C_S_Application_User_Messages" />
+    <NavigationProperty Name="C_S_Application_User_Roles" Relationship="ASLModel.FK__S_Application_User_Roles__S_Application_Users" FromRole="C_S_Application_Users" ToRole="C_S_Application_User_Roles" />
+  </EntityType>
+  <EntityType Name="C_S_Companies">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Street_Address_1" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Street_Address_2" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="City_Town" Type="String" MaxLength="35" Unicode="false" FixedLength="false" />
+    <Property Name="Province" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Postal_Code" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone_Area_Code" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="Telephone_Number" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Facsimile_Area_Code" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+    <Property Name="Facsimile_Number" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Telex_Number" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="Private_Domain_Name" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Website_URL" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Date_Established" Type="DateTime" />
+    <Property Name="Salary_Program" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Performance_Pay" Type="Boolean" Nullable="false" />
+    <Property Name="Enforce_Work_Rules" Type="Boolean" Nullable="false" />
+    <Property Name="Enforce_Org_Integrity" Type="Boolean" Nullable="false" />
+    <Property Name="Max_Hours_Week" Type="Decimal" Nullable="false" Precision="18" Scale="8" />
+    <Property Name="Logo" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="TaxId" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="NAICS" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="SIC" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="DUNS" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="EEO" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Server_Time_Zone" Type="Int32" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_C_UT_Codes" Relationship="ASLModel.C_S_Companies__S_Codes_FK1" FromRole="C_S_Companies" ToRole="C_C_UT_Codes" />
+    <NavigationProperty Name="C_P_EM_Employees" Relationship="ASLModel.C_S_Companies__P_EM_Employees_FK1" FromRole="C_S_Companies" ToRole="C_P_EM_Employees" />
+  </EntityType>
+  <EntityType Name="C_S_Descriptions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Obj" Type="Guid" Nullable="false" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Language" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Str" Type="String" MaxLength="7000" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_Languages" Relationship="ASLModel.C_S_Languages__S_Descriptions_FK1" FromRole="C_S_Descriptions" ToRole="C_S_Languages" />
+  </EntityType>
+  <EntityType Name="C_S_Error_Table">
+    <Key>
+      <PropertyRef Name="Language" />
+      <PropertyRef Name="Error_Number" />
+    </Key>
+    <Property Name="Language" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Error_Number" Type="Int32" Nullable="false" />
+    <Property Name="Error_Message" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Error_Type" Type="Int16" />
+    <Property Name="Error_Box_Title" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="C_S_Languages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_C_UT_Codes" Relationship="ASLModel.C_S_Languages__S_Codes_FK1" FromRole="C_S_Languages" ToRole="C_C_UT_Codes" />
+    <NavigationProperty Name="C_S_Descriptions" Relationship="ASLModel.C_S_Languages__S_Descriptions_FK1" FromRole="C_S_Languages" ToRole="C_S_Descriptions" />
+  </EntityType>
+  <EntityType Name="C_S_Security_Employee_Sets">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="C_S_Accessible_Employee_Sets" Relationship="ASLModel.FK__S_Accessible_Employee_Sets__S_Security_Employee_Sets" FromRole="C_S_Security_Employee_Sets" ToRole="C_S_Accessible_Employee_Sets" />
+    <NavigationProperty Name="C_P_EM_Employees" Relationship="ASLModel.C_S_Accessible_Employees" FromRole="C_S_Security_Employee_Sets" ToRole="C_P_EM_Employees" />
+  </EntityType>
+  <EntityType Name="C_S_Security_Objects">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Parent" Type="Guid" />
+    <Property Name="Url" Type="String" MaxLength="1024" Unicode="false" FixedLength="false" />
+    <Property Name="Help_Id" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="View_Order" Type="Int32" Nullable="false" />
+    <Property Name="Ref_Object" Type="Guid" />
+    <Property Name="Is_System_Object" Type="Boolean" Nullable="false" />
+    <Property Name="Is_Read_Only" Type="Boolean" Nullable="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Inline_CSS" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="C_S_Accessible_Objects" Relationship="ASLModel.C_S_Security_Objects__S_Accessible_Objects_FK1" FromRole="C_S_Security_Objects" ToRole="C_S_Accessible_Objects" />
+    <NavigationProperty Name="C_S_Application_Role_Area_Objects" Relationship="ASLModel.FK__S_Application_Role_Area_Objects__S_Security_Objects" FromRole="C_S_Security_Objects" ToRole="C_S_Application_Role_Area_Objects" />
+    <NavigationProperty Name="C_S_Application_Role_Area_Objects1" Relationship="ASLModel.FK__S_Application_Role_Area_Objects__S_Security_Objects1" FromRole="C_S_Security_Objects" ToRole="C_S_Application_Role_Area_Objects" />
+    <NavigationProperty Name="C_S_Application_Role_Objects" Relationship="ASLModel.FK__S_Application_Role_Objects__S_Security_Objects" FromRole="C_S_Security_Objects" ToRole="C_S_Application_Role_Objects" />
+    <NavigationProperty Name="C_S_Security_Objects1" Relationship="ASLModel.C_S_Security_Objects__S_Security_Objects_FK1" FromRole="C_S_Security_Objects" ToRole="C_S_Security_Objects1" />
+    <NavigationProperty Name="C_S_Security_Objects2" Relationship="ASLModel.C_S_Security_Objects__S_Security_Objects_FK1" FromRole="C_S_Security_Objects1" ToRole="C_S_Security_Objects" />
+  </EntityType>
+  <EntityType Name="C_S_Security_Objects_Tree">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Url" Type="String" MaxLength="1024" Unicode="false" FixedLength="false" />
+    <Property Name="View_Order" Type="Int32" />
+    <Property Name="Ref_Object" Type="Guid" />
+    <Property Name="Is_System_Object" Type="Boolean" />
+    <Property Name="Is_Read_Only" Type="Boolean" />
+    <Property Name="Full_Name" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Level" Type="Int32" />
+    <Property Name="Parent" Type="Guid" />
+    <Property Name="Help_Id" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="C_S_Security_Profile_Tables">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Security_Profile" Type="Guid" Nullable="false" />
+    <Property Name="Dictionary_Table" Type="Guid" Nullable="false" />
+    <Property Name="Sql_Text" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="Xml_Text" Type="String" MaxLength="6000" Unicode="false" FixedLength="false" />
+    <Property Name="Saved_Sql_Expression" Type="Guid" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_Security_Profiles" Relationship="ASLModel.FK__S_Security_Profile_Tables__S_Security_Profiles" FromRole="C_S_Security_Profile_Tables" ToRole="C_S_Security_Profiles" />
+  </EntityType>
+  <EntityType Name="C_S_Security_Profiles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Sql_Text" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="Xml_Text" Type="String" MaxLength="6000" Unicode="false" FixedLength="false" />
+    <Property Name="Saved_Sql_Expression" Type="Guid" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_Application_Roles" Relationship="ASLModel.FK__S_Application_Roles__S_Security_Profiles" FromRole="C_S_Security_Profiles" ToRole="C_S_Application_Roles" />
+    <NavigationProperty Name="C_S_Application_User_Roles" Relationship="ASLModel.FK__S_Application_User_Roles__S_Security_Profiles" FromRole="C_S_Security_Profiles" ToRole="C_S_Application_User_Roles" />
+    <NavigationProperty Name="C_S_Security_Profile_Tables" Relationship="ASLModel.FK__S_Security_Profile_Tables__S_Security_Profiles" FromRole="C_S_Security_Profiles" ToRole="C_S_Security_Profile_Tables" />
+  </EntityType>
+  <EntityType Name="C_S_Security_Tokens">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Authentication_Ticket" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Expiry" Type="DateTime" Nullable="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="C_S_UT_Workflow_Instance_Schedule_Employees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Schedule" Type="Guid" Nullable="false" />
+    <Property Name="Employee" Type="Guid" Nullable="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="C_S_UT_Workflow_Instance_Schedules" Relationship="ASLModel.FK__S_UT_Workflow_Instance_Schedule_Employees__S_UT_Workflow_Instance_Schedules" FromRole="C_S_UT_Workflow_Instance_Schedule_Employees" ToRole="C_S_UT_Workflow_Instance_Schedules" />
+  </EntityType>
+  <EntityType Name="C_S_UT_Workflow_Instance_Schedules">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Instance" Type="Guid" />
+    <Property Name="Schedule_Type" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Specific_Date" Type="DateTime" />
+    <Property Name="Occurance_Number" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Month_Code" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Weekday_Code" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Day_Code" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Dictionary_Field" Type="Guid" />
+    <Property Name="Days_Offset" Type="Int32" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="C_S_UT_Workflow_Instance_Schedule_Employees" Relationship="ASLModel.FK__S_UT_Workflow_Instance_Schedule_Employees__S_UT_Workflow_Instance_Schedules" FromRole="C_S_UT_Workflow_Instance_Schedules" ToRole="C_S_UT_Workflow_Instance_Schedule_Employees" />
+    <NavigationProperty Name="C_S_UT_Workflow_Instances" Relationship="ASLModel.FK__S_UT_Workflow_Instance_Schedules__S_UT_Workflow_Instances" FromRole="C_S_UT_Workflow_Instance_Schedules" ToRole="C_S_UT_Workflow_Instances" />
+  </EntityType>
+  <EntityType Name="C_S_UT_Workflow_Instances">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Ref_Id" Type="Guid" Nullable="false" />
+    <Property Name="Started" Type="DateTime" Nullable="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Status" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="C_S_UT_Workflow_Instance_Schedules" Relationship="ASLModel.FK__S_UT_Workflow_Instance_Schedules__S_UT_Workflow_Instances" FromRole="C_S_UT_Workflow_Instances" ToRole="C_S_UT_Workflow_Instance_Schedules" />
+    <NavigationProperty Name="C_S_UT_Workflow_Task_CheckList_Statuses" Relationship="ASLModel.FK__S_UT_Workflow_Instances__S_UT_Workflow_Task_CheckList_Statuses" FromRole="C_S_UT_Workflow_Instances" ToRole="C_S_UT_Workflow_Task_CheckList_Statuses" />
+    <NavigationProperty Name="C_S_UT_Workflow_Step_Statuses" Relationship="ASLModel.FK__S_UT_Workflow_Step_Statuses__S_UT_Workflow_Instances" FromRole="C_S_UT_Workflow_Instances" ToRole="C_S_UT_Workflow_Step_Statuses" />
+    <NavigationProperty Name="C_S_UT_Workflow_TaskForm_Statuses" Relationship="ASLModel.FK__S_UT_Workflow_TaskForm_Statuses__S_UT_Workflow_Instances" FromRole="C_S_UT_Workflow_Instances" ToRole="C_S_UT_Workflow_TaskForm_Statuses" />
+  </EntityType>
+  <EntityType Name="C_S_UT_Workflow_Schedule_Employees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Schedule" Type="Guid" Nullable="false" />
+    <Property Name="Employee" Type="Guid" Nullable="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="C_S_UT_Workflow_Schedules" Relationship="ASLModel.FK__S_UT_Workflow_Schedule_Employees__S_UT_Workflow_Schedules" FromRole="C_S_UT_Workflow_Schedule_Employees" ToRole="C_S_UT_Workflow_Schedules" />
+  </EntityType>
+  <EntityType Name="C_S_UT_Workflow_Schedules">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Workflow" Type="Guid" />
+    <Property Name="Schedule_Type" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Specific_Date" Type="DateTime" />
+    <Property Name="Occurance_Number" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Month_Code" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Weekday_Code" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Day_Code" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Dictionary_Field" Type="Guid" />
+    <Property Name="Days_Offset" Type="Int32" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="C_S_UT_Workflow_Schedule_Employees" Relationship="ASLModel.FK__S_UT_Workflow_Schedule_Employees__S_UT_Workflow_Schedules" FromRole="C_S_UT_Workflow_Schedules" ToRole="C_S_UT_Workflow_Schedule_Employees" />
+    <NavigationProperty Name="C_S_UT_Workflows" Relationship="ASLModel.FK__S_UT_Workflow_Schedules__S_UT_Workflows" FromRole="C_S_UT_Workflow_Schedules" ToRole="C_S_UT_Workflows" />
+  </EntityType>
+  <EntityType Name="C_S_UT_Workflow_Step_Statuses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Workflow_Instance" Type="Guid" />
+    <Property Name="Ref_Id" Type="Guid" Nullable="false" />
+    <Property Name="Step_Screen" Type="Guid" Nullable="false" />
+    <Property Name="Step_Number" Type="Int32" />
+    <Property Name="Created" Type="DateTime" Nullable="false" />
+    <Property Name="Created_By" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Updated_By" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Inactive" Type="Boolean" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_UT_Workflow_Instances" Relationship="ASLModel.FK__S_UT_Workflow_Step_Statuses__S_UT_Workflow_Instances" FromRole="C_S_UT_Workflow_Step_Statuses" ToRole="C_S_UT_Workflow_Instances" />
+  </EntityType>
+  <EntityType Name="C_S_UT_Workflow_Steps">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Workflow" Type="Guid" Nullable="false" />
+    <Property Name="Step_Screen" Type="Guid" Nullable="false" />
+    <Property Name="Step_Number" Type="Int32" />
+    <Property Name="Created" Type="DateTime" Nullable="false" />
+    <Property Name="Created_By" Type="Guid" Nullable="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Updated_By" Type="Guid" />
+    <Property Name="Inactive" Type="Boolean" Nullable="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_UT_Workflows" Relationship="ASLModel.FK__S_UT_Workflow_Steps__S_UT_Workflows" FromRole="C_S_UT_Workflow_Steps" ToRole="C_S_UT_Workflows" />
+    <NavigationProperty Name="C_S_UT_Workflow_Tasks" Relationship="ASLModel.FK__S_UT_Workflow_Tasks__S_UT_Workflow_Steps" FromRole="C_S_UT_Workflow_Steps" ToRole="C_S_UT_Workflow_Tasks" />
+  </EntityType>
+  <EntityType Name="C_S_UT_Workflow_Task_CheckList_Statuses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Workflow_Instance" Type="Guid" Nullable="false" />
+    <Property Name="Ref_Id" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" />
+    <Property Name="Created_By" Type="Guid" Nullable="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Updated_By" Type="Guid" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Inactive" Type="Boolean" Nullable="false" />
+    <Property Name="Complete" Type="Boolean" Nullable="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_UT_Workflow_Instances" Relationship="ASLModel.FK__S_UT_Workflow_Instances__S_UT_Workflow_Task_CheckList_Statuses" FromRole="C_S_UT_Workflow_Task_CheckList_Statuses" ToRole="C_S_UT_Workflow_Instances" />
+  </EntityType>
+  <EntityType Name="C_S_UT_Workflow_Task_CheckLists">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Workflow_Task" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" />
+    <Property Name="Created_By" Type="Guid" Nullable="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Updated_By" Type="Guid" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Inactive" Type="Boolean" Nullable="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="C_S_UT_Workflow_Tasks" Relationship="ASLModel.FK__S_UT_Workflow_Task_CheckList__S_UT_Workflow_Tasks" FromRole="C_S_UT_Workflow_Task_CheckLists" ToRole="C_S_UT_Workflow_Tasks" />
+  </EntityType>
+  <EntityType Name="C_S_UT_Workflow_TaskForm_Statuses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Workflow_Instance" Type="Guid" Nullable="false" />
+    <Property Name="Ref_Id" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" />
+    <Property Name="Created_By" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Updated_By" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Subject_Employee_Id" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Subject_Employee_Name" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="From_Employee_Name" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Employee_To" Type="Guid" />
+    <Property Name="Employee_CC" Type="Guid" />
+    <Property Name="Employee_BCC" Type="Guid" />
+    <Property Name="Subject" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Message_Box" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Escalate_To" Type="Guid" />
+    <Property Name="Escalate_After" Type="Int32" />
+    <Property Name="Escalate_Timestamp" Type="DateTime" />
+    <Property Name="Sign_Off" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Sign_Timestamp" Type="DateTime" />
+    <Property Name="Cancel_By" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Cancel_Timestamp" Type="DateTime" />
+    <Property Name="Inactive" Type="Boolean" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_UT_Workflow_Instances" Relationship="ASLModel.FK__S_UT_Workflow_TaskForm_Statuses__S_UT_Workflow_Instances" FromRole="C_S_UT_Workflow_TaskForm_Statuses" ToRole="C_S_UT_Workflow_Instances" />
+  </EntityType>
+  <EntityType Name="C_S_UT_Workflow_TaskForms">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Task" Type="Guid" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" />
+    <Property Name="Created_By" Type="Guid" Nullable="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Updated_By" Type="Guid" />
+    <Property Name="Subject_Employee_Id" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Subject_Employee_Name" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="From_Employee_Name" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Employee_To" Type="Guid" />
+    <Property Name="Employee_CC" Type="Guid" />
+    <Property Name="Employee_BCC" Type="Guid" />
+    <Property Name="Subject" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Message_Box" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Escalate_To" Type="Guid" />
+    <Property Name="Escalate_After" Type="Int32" />
+    <Property Name="Escalate_Timestamp" Type="DateTime" />
+    <Property Name="Sign_Off" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Sign_Timestamp" Type="DateTime" />
+    <Property Name="Cancel_By" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Cancel_Timestamp" Type="DateTime" />
+    <Property Name="Inactive" Type="Boolean" Nullable="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_UT_Workflow_Tasks" Relationship="ASLModel.FK__S_UT_Workflow_TaskForms__S_UT_Workflow_Tasks" FromRole="C_S_UT_Workflow_TaskForms" ToRole="C_S_UT_Workflow_Tasks" />
+  </EntityType>
+  <EntityType Name="C_S_UT_Workflow_Tasks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Workflow_Step" Type="Guid" Nullable="false" />
+    <Property Name="Task_Number" Type="Int32" />
+    <Property Name="Created" Type="DateTime" Nullable="false" />
+    <Property Name="Created_By" Type="Guid" Nullable="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Updated_By" Type="Guid" />
+    <Property Name="Inactive" Type="Boolean" Nullable="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_UT_Workflow_Steps" Relationship="ASLModel.FK__S_UT_Workflow_Tasks__S_UT_Workflow_Steps" FromRole="C_S_UT_Workflow_Tasks" ToRole="C_S_UT_Workflow_Steps" />
+    <NavigationProperty Name="C_S_UT_Workflow_Task_CheckLists" Relationship="ASLModel.FK__S_UT_Workflow_Task_CheckList__S_UT_Workflow_Tasks" FromRole="C_S_UT_Workflow_Tasks" ToRole="C_S_UT_Workflow_Task_CheckLists" />
+    <NavigationProperty Name="C_S_UT_Workflow_TaskForms" Relationship="ASLModel.FK__S_UT_Workflow_TaskForms__S_UT_Workflow_Tasks" FromRole="C_S_UT_Workflow_Tasks" ToRole="C_S_UT_Workflow_TaskForms" />
+  </EntityType>
+  <EntityType Name="C_S_UT_Workflows">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Language" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Workflow_Name" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" />
+    <Property Name="Created_By" Type="Guid" Nullable="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Updated_By" Type="Guid" />
+    <Property Name="Inactive" Type="Boolean" Nullable="false" />
+    <Property Name="Audit_User" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Audit_Date" Type="DateTime" />
+    <Property Name="Audit_System" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+    <Property Name="Row_Version" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="C_S_UT_Workflow_Schedules" Relationship="ASLModel.FK__S_UT_Workflow_Schedules__S_UT_Workflows" FromRole="C_S_UT_Workflows" ToRole="C_S_UT_Workflow_Schedules" />
+    <NavigationProperty Name="C_S_UT_Workflow_Steps" Relationship="ASLModel.FK__S_UT_Workflow_Steps__S_UT_Workflows" FromRole="C_S_UT_Workflows" ToRole="C_S_UT_Workflow_Steps" />
+  </EntityType>
+  <Association Name="C_S_Companies__S_Codes_FK1">
+    <End Role="C_S_Companies" Type="ASLModel.C_S_Companies" Multiplicity="1" />
+    <End Role="C_C_UT_Codes" Type="ASLModel.C_C_UT_Codes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Companies">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_C_UT_Codes">
+        <PropertyRef Name="Company" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="C_S_Languages__S_Codes_FK1">
+    <End Role="C_S_Languages" Type="ASLModel.C_S_Languages" Multiplicity="1" />
+    <End Role="C_C_UT_Codes" Type="ASLModel.C_C_UT_Codes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Languages">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_C_UT_Codes">
+        <PropertyRef Name="Language" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="C_S_Companies__P_EM_Employees_FK1">
+    <End Role="C_S_Companies" Type="ASLModel.C_S_Companies" Multiplicity="1" />
+    <End Role="C_P_EM_Employees" Type="ASLModel.C_P_EM_Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Companies">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_P_EM_Employees">
+        <PropertyRef Name="Company" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__P_EM_Employees__P_EM_Employees">
+    <End Role="C_P_EM_Employees" Type="ASLModel.C_P_EM_Employees" Multiplicity="0..1" />
+    <End Role="C_P_EM_Employees1" Type="ASLModel.C_P_EM_Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_P_EM_Employees">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_P_EM_Employees1">
+        <PropertyRef Name="Supervisor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Accessible_Employee_Sets__S_Application_Roles">
+    <End Role="C_S_Application_Roles" Type="ASLModel.C_S_Application_Roles" Multiplicity="1" />
+    <End Role="C_S_Accessible_Employee_Sets" Type="ASLModel.C_S_Accessible_Employee_Sets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Application_Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Accessible_Employee_Sets">
+        <PropertyRef Name="Application_Role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Accessible_Employee_Sets__S_Application_Users">
+    <End Role="C_S_Application_Users" Type="ASLModel.C_S_Application_Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="C_S_Accessible_Employee_Sets" Type="ASLModel.C_S_Accessible_Employee_Sets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Application_Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Accessible_Employee_Sets">
+        <PropertyRef Name="Application_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Accessible_Employee_Sets__S_Security_Employee_Sets">
+    <End Role="C_S_Security_Employee_Sets" Type="ASLModel.C_S_Security_Employee_Sets" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="C_S_Accessible_Employee_Sets" Type="ASLModel.C_S_Accessible_Employee_Sets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Security_Employee_Sets">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Accessible_Employee_Sets">
+        <PropertyRef Name="Employee_Set" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="C_S_Security_Objects__S_Accessible_Objects_FK1">
+    <End Role="C_S_Security_Objects" Type="ASLModel.C_S_Security_Objects" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="C_S_Accessible_Objects" Type="ASLModel.C_S_Accessible_Objects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Security_Objects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Accessible_Objects">
+        <PropertyRef Name="Security_Object" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Accessible_Objects__S_Application_Roles">
+    <End Role="C_S_Application_Roles" Type="ASLModel.C_S_Application_Roles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="C_S_Accessible_Objects" Type="ASLModel.C_S_Accessible_Objects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Application_Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Accessible_Objects">
+        <PropertyRef Name="Application_Role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_Role_Area_Objects__S_Application_Roles">
+    <End Role="C_S_Application_Roles" Type="ASLModel.C_S_Application_Roles" Multiplicity="1" />
+    <End Role="C_S_Application_Role_Area_Objects" Type="ASLModel.C_S_Application_Role_Area_Objects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Application_Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Application_Role_Area_Objects">
+        <PropertyRef Name="Application_Role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_Role_Area_Objects__S_Security_Objects">
+    <End Role="C_S_Security_Objects" Type="ASLModel.C_S_Security_Objects" Multiplicity="1" />
+    <End Role="C_S_Application_Role_Area_Objects" Type="ASLModel.C_S_Application_Role_Area_Objects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Security_Objects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Application_Role_Area_Objects">
+        <PropertyRef Name="Area" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_Role_Area_Objects__S_Security_Objects1">
+    <End Role="C_S_Security_Objects" Type="ASLModel.C_S_Security_Objects" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="C_S_Application_Role_Area_Objects" Type="ASLModel.C_S_Application_Role_Area_Objects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Security_Objects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Application_Role_Area_Objects">
+        <PropertyRef Name="Security_Object" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_Role_Objects__S_Application_Roles">
+    <End Role="C_S_Application_Roles" Type="ASLModel.C_S_Application_Roles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="C_S_Application_Role_Objects" Type="ASLModel.C_S_Application_Role_Objects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Application_Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Application_Role_Objects">
+        <PropertyRef Name="Application_Role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_Role_Objects__S_Security_Objects">
+    <End Role="C_S_Security_Objects" Type="ASLModel.C_S_Security_Objects" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="C_S_Application_Role_Objects" Type="ASLModel.C_S_Application_Role_Objects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Security_Objects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Application_Role_Objects">
+        <PropertyRef Name="Security_Object" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_Roles__S_Security_Profiles">
+    <End Role="C_S_Security_Profiles" Type="ASLModel.C_S_Security_Profiles" Multiplicity="1" />
+    <End Role="C_S_Application_Roles" Type="ASLModel.C_S_Application_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Security_Profiles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Application_Roles">
+        <PropertyRef Name="Security_Profile" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_User_Roles__S_Application_Roles">
+    <End Role="C_S_Application_Roles" Type="ASLModel.C_S_Application_Roles" Multiplicity="1" />
+    <End Role="C_S_Application_User_Roles" Type="ASLModel.C_S_Application_User_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Application_Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Application_User_Roles">
+        <PropertyRef Name="Application_Role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_User_Messages__S_Application_Users">
+    <End Role="C_S_Application_Users" Type="ASLModel.C_S_Application_Users" Multiplicity="0..1" />
+    <End Role="C_S_Application_User_Messages" Type="ASLModel.C_S_Application_User_Messages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Application_Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Application_User_Messages">
+        <PropertyRef Name="To_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_User_Messages__S_Application_Users1">
+    <End Role="C_S_Application_Users" Type="ASLModel.C_S_Application_Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="C_S_Application_User_Messages" Type="ASLModel.C_S_Application_User_Messages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Application_Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Application_User_Messages">
+        <PropertyRef Name="From_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_User_Roles__S_Application_Users">
+    <End Role="C_S_Application_Users" Type="ASLModel.C_S_Application_Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="C_S_Application_User_Roles" Type="ASLModel.C_S_Application_User_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Application_Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Application_User_Roles">
+        <PropertyRef Name="Application_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_User_Roles__S_Security_Profiles">
+    <End Role="C_S_Security_Profiles" Type="ASLModel.C_S_Security_Profiles" Multiplicity="0..1" />
+    <End Role="C_S_Application_User_Roles" Type="ASLModel.C_S_Application_User_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Security_Profiles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Application_User_Roles">
+        <PropertyRef Name="Security_Profile" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="C_S_Languages__S_Descriptions_FK1">
+    <End Role="C_S_Languages" Type="ASLModel.C_S_Languages" Multiplicity="1" />
+    <End Role="C_S_Descriptions" Type="ASLModel.C_S_Descriptions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Languages">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Descriptions">
+        <PropertyRef Name="Language" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="C_S_Security_Objects__S_Security_Objects_FK1">
+    <End Role="C_S_Security_Objects" Type="ASLModel.C_S_Security_Objects" Multiplicity="0..1" />
+    <End Role="C_S_Security_Objects1" Type="ASLModel.C_S_Security_Objects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Security_Objects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Security_Objects1">
+        <PropertyRef Name="Parent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Security_Profile_Tables__S_Security_Profiles">
+    <End Role="C_S_Security_Profiles" Type="ASLModel.C_S_Security_Profiles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="C_S_Security_Profile_Tables" Type="ASLModel.C_S_Security_Profile_Tables" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_Security_Profiles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_Security_Profile_Tables">
+        <PropertyRef Name="Security_Profile" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Instance_Schedule_Employees__S_UT_Workflow_Instance_Schedules">
+    <End Role="C_S_UT_Workflow_Instance_Schedules" Type="ASLModel.C_S_UT_Workflow_Instance_Schedules" Multiplicity="1" />
+    <End Role="C_S_UT_Workflow_Instance_Schedule_Employees" Type="ASLModel.C_S_UT_Workflow_Instance_Schedule_Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_UT_Workflow_Instance_Schedules">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_UT_Workflow_Instance_Schedule_Employees">
+        <PropertyRef Name="Schedule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Instance_Schedules__S_UT_Workflow_Instances">
+    <End Role="C_S_UT_Workflow_Instances" Type="ASLModel.C_S_UT_Workflow_Instances" Multiplicity="0..1" />
+    <End Role="C_S_UT_Workflow_Instance_Schedules" Type="ASLModel.C_S_UT_Workflow_Instance_Schedules" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_UT_Workflow_Instances">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_UT_Workflow_Instance_Schedules">
+        <PropertyRef Name="Instance" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Instances__S_UT_Workflow_Task_CheckList_Statuses">
+    <End Role="C_S_UT_Workflow_Task_CheckList_Statuses" Type="ASLModel.C_S_UT_Workflow_Task_CheckList_Statuses" Multiplicity="1" />
+    <End Role="C_S_UT_Workflow_Instances" Type="ASLModel.C_S_UT_Workflow_Instances" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_UT_Workflow_Task_CheckList_Statuses">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_UT_Workflow_Instances">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Step_Statuses__S_UT_Workflow_Instances">
+    <End Role="C_S_UT_Workflow_Instances" Type="ASLModel.C_S_UT_Workflow_Instances" Multiplicity="0..1" />
+    <End Role="C_S_UT_Workflow_Step_Statuses" Type="ASLModel.C_S_UT_Workflow_Step_Statuses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_UT_Workflow_Instances">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_UT_Workflow_Step_Statuses">
+        <PropertyRef Name="Workflow_Instance" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_TaskForm_Statuses__S_UT_Workflow_Instances">
+    <End Role="C_S_UT_Workflow_Instances" Type="ASLModel.C_S_UT_Workflow_Instances" Multiplicity="1" />
+    <End Role="C_S_UT_Workflow_TaskForm_Statuses" Type="ASLModel.C_S_UT_Workflow_TaskForm_Statuses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_UT_Workflow_Instances">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_UT_Workflow_TaskForm_Statuses">
+        <PropertyRef Name="Workflow_Instance" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Schedule_Employees__S_UT_Workflow_Schedules">
+    <End Role="C_S_UT_Workflow_Schedules" Type="ASLModel.C_S_UT_Workflow_Schedules" Multiplicity="1" />
+    <End Role="C_S_UT_Workflow_Schedule_Employees" Type="ASLModel.C_S_UT_Workflow_Schedule_Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_UT_Workflow_Schedules">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_UT_Workflow_Schedule_Employees">
+        <PropertyRef Name="Schedule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Schedules__S_UT_Workflows">
+    <End Role="C_S_UT_Workflows" Type="ASLModel.C_S_UT_Workflows" Multiplicity="0..1" />
+    <End Role="C_S_UT_Workflow_Schedules" Type="ASLModel.C_S_UT_Workflow_Schedules" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_UT_Workflows">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_UT_Workflow_Schedules">
+        <PropertyRef Name="Workflow" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Steps__S_UT_Workflows">
+    <End Role="C_S_UT_Workflows" Type="ASLModel.C_S_UT_Workflows" Multiplicity="1" />
+    <End Role="C_S_UT_Workflow_Steps" Type="ASLModel.C_S_UT_Workflow_Steps" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_UT_Workflows">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_UT_Workflow_Steps">
+        <PropertyRef Name="Workflow" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Tasks__S_UT_Workflow_Steps">
+    <End Role="C_S_UT_Workflow_Steps" Type="ASLModel.C_S_UT_Workflow_Steps" Multiplicity="1" />
+    <End Role="C_S_UT_Workflow_Tasks" Type="ASLModel.C_S_UT_Workflow_Tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_UT_Workflow_Steps">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_UT_Workflow_Tasks">
+        <PropertyRef Name="Workflow_Step" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Task_CheckList__S_UT_Workflow_Tasks">
+    <End Role="C_S_UT_Workflow_Tasks" Type="ASLModel.C_S_UT_Workflow_Tasks" Multiplicity="1" />
+    <End Role="C_S_UT_Workflow_Task_CheckLists" Type="ASLModel.C_S_UT_Workflow_Task_CheckLists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_UT_Workflow_Tasks">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_UT_Workflow_Task_CheckLists">
+        <PropertyRef Name="Workflow_Task" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_TaskForms__S_UT_Workflow_Tasks">
+    <End Role="C_S_UT_Workflow_Tasks" Type="ASLModel.C_S_UT_Workflow_Tasks" Multiplicity="1" />
+    <End Role="C_S_UT_Workflow_TaskForms" Type="ASLModel.C_S_UT_Workflow_TaskForms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="C_S_UT_Workflow_Tasks">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="C_S_UT_Workflow_TaskForms">
+        <PropertyRef Name="Task" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="C_S_Accessible_Employees">
+    <End Role="C_S_Security_Employee_Sets" Type="ASLModel.C_S_Security_Employee_Sets" Multiplicity="*" />
+    <End Role="C_P_EM_Employees" Type="ASLModel.C_P_EM_Employees" Multiplicity="*" />
+  </Association>
+</Schema>

@@ -1,0 +1,1490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ASLModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ASLModelStoreContainer">
+    <EntitySet Name="_C_UT_Codes" EntityType="ASLModel.Store._C_UT_Codes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_H_EM_Employees" EntityType="ASLModel.Store._H_EM_Employees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_H_UT_Codes" EntityType="ASLModel.Store._H_UT_Codes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_P_EM_Employees" EntityType="ASLModel.Store._P_EM_Employees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Accessible_Employee_Sets" EntityType="ASLModel.Store._S_Accessible_Employee_Sets" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Accessible_Employees" EntityType="ASLModel.Store._S_Accessible_Employees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Accessible_Objects" EntityType="ASLModel.Store._S_Accessible_Objects" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Application_Access_Log" EntityType="ASLModel.Store._S_Application_Access_Log" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Application_Errors" EntityType="ASLModel.Store._S_Application_Errors" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Application_Role_Area_Objects" EntityType="ASLModel.Store._S_Application_Role_Area_Objects" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Application_Role_Objects" EntityType="ASLModel.Store._S_Application_Role_Objects" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Application_Roles" EntityType="ASLModel.Store._S_Application_Roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Application_User_Active_Roles" EntityType="ASLModel.Store._S_Application_User_Active_Roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Application_User_Login_Logs" EntityType="ASLModel.Store._S_Application_User_Login_Logs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Application_User_Message_Logs" EntityType="ASLModel.Store._S_Application_User_Message_Logs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Application_User_Messages" EntityType="ASLModel.Store._S_Application_User_Messages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Application_User_Roles" EntityType="ASLModel.Store._S_Application_User_Roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Application_Users" EntityType="ASLModel.Store._S_Application_Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Companies" EntityType="ASLModel.Store._S_Companies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Descriptions" EntityType="ASLModel.Store._S_Descriptions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Error_Table" EntityType="ASLModel.Store._S_Error_Table" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Languages" EntityType="ASLModel.Store._S_Languages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Security_Employee_Sets" EntityType="ASLModel.Store._S_Security_Employee_Sets" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Security_Objects" EntityType="ASLModel.Store._S_Security_Objects" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Security_Objects_Tree" EntityType="ASLModel.Store._S_Security_Objects_Tree" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Security_Profile_Tables" EntityType="ASLModel.Store._S_Security_Profile_Tables" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Security_Profiles" EntityType="ASLModel.Store._S_Security_Profiles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_Security_Tokens" EntityType="ASLModel.Store._S_Security_Tokens" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_UT_Workflow_Instance_Schedule_Employees" EntityType="ASLModel.Store._S_UT_Workflow_Instance_Schedule_Employees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_UT_Workflow_Instance_Schedules" EntityType="ASLModel.Store._S_UT_Workflow_Instance_Schedules" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_UT_Workflow_Instances" EntityType="ASLModel.Store._S_UT_Workflow_Instances" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_UT_Workflow_Schedule_Employees" EntityType="ASLModel.Store._S_UT_Workflow_Schedule_Employees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_UT_Workflow_Schedules" EntityType="ASLModel.Store._S_UT_Workflow_Schedules" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_UT_Workflow_Step_Statuses" EntityType="ASLModel.Store._S_UT_Workflow_Step_Statuses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_UT_Workflow_Steps" EntityType="ASLModel.Store._S_UT_Workflow_Steps" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_UT_Workflow_Task_CheckList_Statuses" EntityType="ASLModel.Store._S_UT_Workflow_Task_CheckList_Statuses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_UT_Workflow_Task_CheckLists" EntityType="ASLModel.Store._S_UT_Workflow_Task_CheckLists" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_UT_Workflow_TaskForm_Statuses" EntityType="ASLModel.Store._S_UT_Workflow_TaskForm_Statuses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_UT_Workflow_TaskForms" EntityType="ASLModel.Store._S_UT_Workflow_TaskForms" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_UT_Workflow_Tasks" EntityType="ASLModel.Store._S_UT_Workflow_Tasks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="_S_UT_Workflows" EntityType="ASLModel.Store._S_UT_Workflows" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="_S_Companies__P_EM_Employees_FK1" Association="ASLModel.Store._S_Companies__P_EM_Employees_FK1">
+      <End Role="_S_Companies" EntitySet="_S_Companies" />
+      <End Role="_P_EM_Employees" EntitySet="_P_EM_Employees" />
+    </AssociationSet>
+    <AssociationSet Name="_S_Companies__S_Codes_FK1" Association="ASLModel.Store._S_Companies__S_Codes_FK1">
+      <End Role="_S_Companies" EntitySet="_S_Companies" />
+      <End Role="_C_UT_Codes" EntitySet="_C_UT_Codes" />
+    </AssociationSet>
+    <AssociationSet Name="_S_Languages__S_Codes_FK1" Association="ASLModel.Store._S_Languages__S_Codes_FK1">
+      <End Role="_S_Languages" EntitySet="_S_Languages" />
+      <End Role="_C_UT_Codes" EntitySet="_C_UT_Codes" />
+    </AssociationSet>
+    <AssociationSet Name="_S_Languages__S_Descriptions_FK1" Association="ASLModel.Store._S_Languages__S_Descriptions_FK1">
+      <End Role="_S_Languages" EntitySet="_S_Languages" />
+      <End Role="_S_Descriptions" EntitySet="_S_Descriptions" />
+    </AssociationSet>
+    <AssociationSet Name="_S_Security_Objects__S_Accessible_Objects_FK1" Association="ASLModel.Store._S_Security_Objects__S_Accessible_Objects_FK1">
+      <End Role="_S_Security_Objects" EntitySet="_S_Security_Objects" />
+      <End Role="_S_Accessible_Objects" EntitySet="_S_Accessible_Objects" />
+    </AssociationSet>
+    <AssociationSet Name="_S_Security_Objects__S_Security_Objects_FK1" Association="ASLModel.Store._S_Security_Objects__S_Security_Objects_FK1">
+      <End Role="_S_Security_Objects" EntitySet="_S_Security_Objects" />
+      <End Role="_S_Security_Objects1" EntitySet="_S_Security_Objects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__P_EM_Employees__P_EM_Employees" Association="ASLModel.Store.FK__P_EM_Employees__P_EM_Employees">
+      <End Role="_P_EM_Employees" EntitySet="_P_EM_Employees" />
+      <End Role="_P_EM_Employees1" EntitySet="_P_EM_Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Accessible_Employee_Sets__S_Application_Roles" Association="ASLModel.Store.FK__S_Accessible_Employee_Sets__S_Application_Roles">
+      <End Role="_S_Application_Roles" EntitySet="_S_Application_Roles" />
+      <End Role="_S_Accessible_Employee_Sets" EntitySet="_S_Accessible_Employee_Sets" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Accessible_Employee_Sets__S_Application_Users" Association="ASLModel.Store.FK__S_Accessible_Employee_Sets__S_Application_Users">
+      <End Role="_S_Application_Users" EntitySet="_S_Application_Users" />
+      <End Role="_S_Accessible_Employee_Sets" EntitySet="_S_Accessible_Employee_Sets" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Accessible_Employee_Sets__S_Security_Employee_Sets" Association="ASLModel.Store.FK__S_Accessible_Employee_Sets__S_Security_Employee_Sets">
+      <End Role="_S_Security_Employee_Sets" EntitySet="_S_Security_Employee_Sets" />
+      <End Role="_S_Accessible_Employee_Sets" EntitySet="_S_Accessible_Employee_Sets" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Accessible_Employees__S_Security_Employee_Sets" Association="ASLModel.Store.FK__S_Accessible_Employees__S_Security_Employee_Sets">
+      <End Role="_S_Security_Employee_Sets" EntitySet="_S_Security_Employee_Sets" />
+      <End Role="_S_Accessible_Employees" EntitySet="_S_Accessible_Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Accessible_Objects__S_Application_Roles" Association="ASLModel.Store.FK__S_Accessible_Objects__S_Application_Roles">
+      <End Role="_S_Application_Roles" EntitySet="_S_Application_Roles" />
+      <End Role="_S_Accessible_Objects" EntitySet="_S_Accessible_Objects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_Role_Area_Objects__S_Application_Roles" Association="ASLModel.Store.FK__S_Application_Role_Area_Objects__S_Application_Roles">
+      <End Role="_S_Application_Roles" EntitySet="_S_Application_Roles" />
+      <End Role="_S_Application_Role_Area_Objects" EntitySet="_S_Application_Role_Area_Objects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_Role_Area_Objects__S_Security_Objects" Association="ASLModel.Store.FK__S_Application_Role_Area_Objects__S_Security_Objects">
+      <End Role="_S_Security_Objects" EntitySet="_S_Security_Objects" />
+      <End Role="_S_Application_Role_Area_Objects" EntitySet="_S_Application_Role_Area_Objects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_Role_Area_Objects__S_Security_Objects1" Association="ASLModel.Store.FK__S_Application_Role_Area_Objects__S_Security_Objects1">
+      <End Role="_S_Security_Objects" EntitySet="_S_Security_Objects" />
+      <End Role="_S_Application_Role_Area_Objects" EntitySet="_S_Application_Role_Area_Objects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_Role_Objects__S_Application_Roles" Association="ASLModel.Store.FK__S_Application_Role_Objects__S_Application_Roles">
+      <End Role="_S_Application_Roles" EntitySet="_S_Application_Roles" />
+      <End Role="_S_Application_Role_Objects" EntitySet="_S_Application_Role_Objects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_Role_Objects__S_Security_Objects" Association="ASLModel.Store.FK__S_Application_Role_Objects__S_Security_Objects">
+      <End Role="_S_Security_Objects" EntitySet="_S_Security_Objects" />
+      <End Role="_S_Application_Role_Objects" EntitySet="_S_Application_Role_Objects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_Roles__S_Security_Profiles" Association="ASLModel.Store.FK__S_Application_Roles__S_Security_Profiles">
+      <End Role="_S_Security_Profiles" EntitySet="_S_Security_Profiles" />
+      <End Role="_S_Application_Roles" EntitySet="_S_Application_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_User_Messages__S_Application_Users" Association="ASLModel.Store.FK__S_Application_User_Messages__S_Application_Users">
+      <End Role="_S_Application_Users" EntitySet="_S_Application_Users" />
+      <End Role="_S_Application_User_Messages" EntitySet="_S_Application_User_Messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_User_Messages__S_Application_Users1" Association="ASLModel.Store.FK__S_Application_User_Messages__S_Application_Users1">
+      <End Role="_S_Application_Users" EntitySet="_S_Application_Users" />
+      <End Role="_S_Application_User_Messages" EntitySet="_S_Application_User_Messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_User_Roles__S_Application_Roles" Association="ASLModel.Store.FK__S_Application_User_Roles__S_Application_Roles">
+      <End Role="_S_Application_Roles" EntitySet="_S_Application_Roles" />
+      <End Role="_S_Application_User_Roles" EntitySet="_S_Application_User_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_User_Roles__S_Application_Users" Association="ASLModel.Store.FK__S_Application_User_Roles__S_Application_Users">
+      <End Role="_S_Application_Users" EntitySet="_S_Application_Users" />
+      <End Role="_S_Application_User_Roles" EntitySet="_S_Application_User_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Application_User_Roles__S_Security_Profiles" Association="ASLModel.Store.FK__S_Application_User_Roles__S_Security_Profiles">
+      <End Role="_S_Security_Profiles" EntitySet="_S_Security_Profiles" />
+      <End Role="_S_Application_User_Roles" EntitySet="_S_Application_User_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_Security_Profile_Tables__S_Security_Profiles" Association="ASLModel.Store.FK__S_Security_Profile_Tables__S_Security_Profiles">
+      <End Role="_S_Security_Profiles" EntitySet="_S_Security_Profiles" />
+      <End Role="_S_Security_Profile_Tables" EntitySet="_S_Security_Profile_Tables" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Instance_Schedule_Employees__S_UT_Workflow_Instance_Schedules" Association="ASLModel.Store.FK__S_UT_Workflow_Instance_Schedule_Employees__S_UT_Workflow_Instance_Schedules">
+      <End Role="_S_UT_Workflow_Instance_Schedules" EntitySet="_S_UT_Workflow_Instance_Schedules" />
+      <End Role="_S_UT_Workflow_Instance_Schedule_Employees" EntitySet="_S_UT_Workflow_Instance_Schedule_Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Instance_Schedules__S_UT_Workflow_Instances" Association="ASLModel.Store.FK__S_UT_Workflow_Instance_Schedules__S_UT_Workflow_Instances">
+      <End Role="_S_UT_Workflow_Instances" EntitySet="_S_UT_Workflow_Instances" />
+      <End Role="_S_UT_Workflow_Instance_Schedules" EntitySet="_S_UT_Workflow_Instance_Schedules" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Instances__S_UT_Workflow_Task_CheckList_Statuses" Association="ASLModel.Store.FK__S_UT_Workflow_Instances__S_UT_Workflow_Task_CheckList_Statuses">
+      <End Role="_S_UT_Workflow_Task_CheckList_Statuses" EntitySet="_S_UT_Workflow_Task_CheckList_Statuses" />
+      <End Role="_S_UT_Workflow_Instances" EntitySet="_S_UT_Workflow_Instances" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Schedule_Employees__S_UT_Workflow_Schedules" Association="ASLModel.Store.FK__S_UT_Workflow_Schedule_Employees__S_UT_Workflow_Schedules">
+      <End Role="_S_UT_Workflow_Schedules" EntitySet="_S_UT_Workflow_Schedules" />
+      <End Role="_S_UT_Workflow_Schedule_Employees" EntitySet="_S_UT_Workflow_Schedule_Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Schedules__S_UT_Workflows" Association="ASLModel.Store.FK__S_UT_Workflow_Schedules__S_UT_Workflows">
+      <End Role="_S_UT_Workflows" EntitySet="_S_UT_Workflows" />
+      <End Role="_S_UT_Workflow_Schedules" EntitySet="_S_UT_Workflow_Schedules" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Step_Statuses__S_UT_Workflow_Instances" Association="ASLModel.Store.FK__S_UT_Workflow_Step_Statuses__S_UT_Workflow_Instances">
+      <End Role="_S_UT_Workflow_Instances" EntitySet="_S_UT_Workflow_Instances" />
+      <End Role="_S_UT_Workflow_Step_Statuses" EntitySet="_S_UT_Workflow_Step_Statuses" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Steps__S_UT_Workflows" Association="ASLModel.Store.FK__S_UT_Workflow_Steps__S_UT_Workflows">
+      <End Role="_S_UT_Workflows" EntitySet="_S_UT_Workflows" />
+      <End Role="_S_UT_Workflow_Steps" EntitySet="_S_UT_Workflow_Steps" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Task_CheckList__S_UT_Workflow_Tasks" Association="ASLModel.Store.FK__S_UT_Workflow_Task_CheckList__S_UT_Workflow_Tasks">
+      <End Role="_S_UT_Workflow_Tasks" EntitySet="_S_UT_Workflow_Tasks" />
+      <End Role="_S_UT_Workflow_Task_CheckLists" EntitySet="_S_UT_Workflow_Task_CheckLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_TaskForm_Statuses__S_UT_Workflow_Instances" Association="ASLModel.Store.FK__S_UT_Workflow_TaskForm_Statuses__S_UT_Workflow_Instances">
+      <End Role="_S_UT_Workflow_Instances" EntitySet="_S_UT_Workflow_Instances" />
+      <End Role="_S_UT_Workflow_TaskForm_Statuses" EntitySet="_S_UT_Workflow_TaskForm_Statuses" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_TaskForms__S_UT_Workflow_Tasks" Association="ASLModel.Store.FK__S_UT_Workflow_TaskForms__S_UT_Workflow_Tasks">
+      <End Role="_S_UT_Workflow_Tasks" EntitySet="_S_UT_Workflow_Tasks" />
+      <End Role="_S_UT_Workflow_TaskForms" EntitySet="_S_UT_Workflow_TaskForms" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_UT_Workflow_Tasks__S_UT_Workflow_Steps" Association="ASLModel.Store.FK__S_UT_Workflow_Tasks__S_UT_Workflow_Steps">
+      <End Role="_S_UT_Workflow_Steps" EntitySet="_S_UT_Workflow_Steps" />
+      <End Role="_S_UT_Workflow_Tasks" EntitySet="_S_UT_Workflow_Tasks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AccessibleEmployees_Employees" Association="ASLModel.Store.FK_AccessibleEmployees_Employees">
+      <End Role="_P_EM_Employees" EntitySet="_P_EM_Employees" />
+      <End Role="_S_Accessible_Employees" EntitySet="_S_Accessible_Employees" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="_C_UT_Codes">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="Company" />
+      <PropertyRef Name="Language" />
+    </Key>
+    <Property Name="Id" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Type" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Company" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Language" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Name" Type="varchar" MaxLength="60" />
+    <Property Name="Inactive" Type="bit" Nullable="false" />
+    <Property Name="Is_System" Type="bit" Nullable="false" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_H_EM_Employees">
+    <Key>
+      <PropertyRef Name="_Id" />
+    </Key>
+    <Property Name="_Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Id" Type="uniqueidentifier" />
+    <Property Name="Number" Type="varchar" MaxLength="10" />
+    <Property Name="Company" Type="varchar" MaxLength="10" />
+    <Property Name="Department" Type="uniqueidentifier" />
+    <Property Name="Position" Type="uniqueidentifier" />
+    <Property Name="Supervisor" Type="uniqueidentifier" />
+    <Property Name="Date_of_Hire" Type="datetime" />
+    <Property Name="Seniority_Date" Type="datetime" />
+    <Property Name="Expatriate" Type="bit" Nullable="false" />
+    <Property Name="Expatriate_Country" Type="varchar" MaxLength="10" />
+    <Property Name="Visa_Type" Type="varchar" MaxLength="10" />
+    <Property Name="Visa_Effective" Type="datetime" />
+    <Property Name="Visa_Expiry" Type="datetime" />
+    <Property Name="Preferred_Language" Type="varchar" MaxLength="10" />
+    <Property Name="Other_Language" Type="varchar" MaxLength="10" />
+    <Property Name="Salutation" Type="varchar" MaxLength="10" />
+    <Property Name="Name_Suffix" Type="varchar" MaxLength="10" />
+    <Property Name="First_Name" Type="varchar" MaxLength="40" />
+    <Property Name="Middle_Name" Type="varchar" MaxLength="40" />
+    <Property Name="Last_Name" Type="varchar" MaxLength="40" />
+    <Property Name="Maiden_Name" Type="varchar" MaxLength="60" />
+    <Property Name="Preferred_Name" Type="varchar" MaxLength="40" />
+    <Property Name="Sex" Type="varchar" MaxLength="10" />
+    <Property Name="Married" Type="bit" Nullable="false" />
+    <Property Name="Marital_Status" Type="varchar" MaxLength="10" />
+    <Property Name="Spouse_First_Name" Type="varchar" MaxLength="40" />
+    <Property Name="Spouse_Middle_Name" Type="varchar" MaxLength="40" />
+    <Property Name="Spouse_Last_Name" Type="varchar" MaxLength="60" />
+    <Property Name="Spouse_SIN" Type="varchar" MaxLength="35" />
+    <Property Name="Spouse_SSN_Number" Type="varchar" MaxLength="35" />
+    <Property Name="Spouse_National_Number" Type="varchar" MaxLength="35" />
+    <Property Name="Spouse_Sex" Type="varchar" MaxLength="10" />
+    <Property Name="Spouse_DOB" Type="datetime" />
+    <Property Name="Address_Street_Number" Type="varchar" MaxLength="60" />
+    <Property Name="Address_City_Town" Type="varchar" MaxLength="35" />
+    <Property Name="Address_Province_State" Type="varchar" MaxLength="10" />
+    <Property Name="Address_Country" Type="varchar" MaxLength="10" />
+    <Property Name="Postal_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Telephone" Type="varchar" MaxLength="40" />
+    <Property Name="Facsimile" Type="varchar" MaxLength="40" />
+    <Property Name="EMail" Type="varchar" MaxLength="60" />
+    <Property Name="Telephone_Car" Type="varchar" MaxLength="40" />
+    <Property Name="Telephone_Mobile" Type="varchar" MaxLength="40" />
+    <Property Name="Alternate_Street_Number" Type="varchar" MaxLength="60" />
+    <Property Name="Alternate_City_Town" Type="varchar" MaxLength="35" />
+    <Property Name="Alternate_Province_State" Type="varchar" MaxLength="10" />
+    <Property Name="Alternate_Country" Type="varchar" MaxLength="10" />
+    <Property Name="Alternate_Postal_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Alternate_Telephone" Type="varchar" MaxLength="40" />
+    <Property Name="Alternate_Facsimile" Type="varchar" MaxLength="40" />
+    <Property Name="Alternate_EMail" Type="varchar" MaxLength="60" />
+    <Property Name="Alternate_Telephone_Car" Type="varchar" MaxLength="40" />
+    <Property Name="Alternate_Telephone_Mobile" Type="varchar" MaxLength="40" />
+    <Property Name="Date_of_Birth" Type="datetime" />
+    <Property Name="Date_Deceased" Type="datetime" />
+    <Property Name="Sin_Number" Type="varchar" MaxLength="35" />
+    <Property Name="SSN_Number" Type="varchar" MaxLength="35" />
+    <Property Name="National_Number" Type="varchar" MaxLength="35" />
+    <Property Name="Citizenship" Type="varchar" MaxLength="10" />
+    <Property Name="Telephone_Business" Type="varchar" MaxLength="40" />
+    <Property Name="Extension" Type="varchar" MaxLength="10" />
+    <Property Name="Facsimile_Business" Type="varchar" MaxLength="40" />
+    <Property Name="EMail_Business" Type="varchar" MaxLength="60" />
+    <Property Name="Telephone_Car_Business" Type="varchar" MaxLength="40" />
+    <Property Name="Telephone_Mobile_Business" Type="varchar" MaxLength="40" />
+    <Property Name="Mail_Drop" Type="varchar" MaxLength="40" />
+    <Property Name="Special_ID" Type="varchar" MaxLength="60" />
+    <Property Name="Rehire_Date" Type="datetime" />
+    <Property Name="Status" Type="varchar" MaxLength="10" />
+    <Property Name="Status_Effective_Date" Type="datetime" />
+    <Property Name="I9_Renewal_Date" Type="datetime" />
+    <Property Name="I9_Status" Type="varchar" MaxLength="10" />
+    <Property Name="W4_Status" Type="varchar" MaxLength="10" />
+    <Property Name="W4_Notes" Type="varchar" MaxLength="1000" />
+    <Property Name="W4_Filing_Status" Type="varchar" MaxLength="10" />
+    <Property Name="W4_Exemptions" Type="int" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="10" />
+    <Property Name="PIEmployee_Number" Type="varchar" MaxLength="60" />
+    <Property Name="Use_Delegate" Type="bit" />
+    <Property Name="Delegate_To" Type="uniqueidentifier" />
+    <Property Name="Supervisor_Locked" Type="bit" Nullable="false" />
+    <Property Name="Inactive" Type="bit" Nullable="false" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="varbinary" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="_H_UT_Codes">
+    <Key>
+      <PropertyRef Name="_Id" />
+    </Key>
+    <Property Name="_Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Id" Type="varchar" MaxLength="10" />
+    <Property Name="Type" Type="varchar" MaxLength="10" />
+    <Property Name="Company" Type="varchar" MaxLength="10" />
+    <Property Name="Language" Type="varchar" MaxLength="10" />
+    <Property Name="Name" Type="varchar" MaxLength="60" />
+    <Property Name="Inactive" Type="bit" Nullable="false" />
+    <Property Name="Is_System" Type="bit" Nullable="false" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="varbinary" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="_P_EM_Employees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Number" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Company" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Department" Type="uniqueidentifier" />
+    <Property Name="Position" Type="uniqueidentifier" />
+    <Property Name="Supervisor" Type="uniqueidentifier" />
+    <Property Name="Date_of_Hire" Type="datetime" />
+    <Property Name="Seniority_Date" Type="datetime" />
+    <Property Name="Expatriate" Type="bit" Nullable="false" />
+    <Property Name="Expatriate_Country" Type="varchar" MaxLength="10" />
+    <Property Name="Visa_Type" Type="varchar" MaxLength="10" />
+    <Property Name="Visa_Effective" Type="datetime" />
+    <Property Name="Visa_Expiry" Type="datetime" />
+    <Property Name="Preferred_Language" Type="varchar" MaxLength="10" />
+    <Property Name="Other_Language" Type="varchar" MaxLength="10" />
+    <Property Name="Salutation" Type="varchar" MaxLength="10" />
+    <Property Name="Name_Suffix" Type="varchar" MaxLength="10" />
+    <Property Name="First_Name" Type="varchar" MaxLength="40" />
+    <Property Name="Middle_Name" Type="varchar" MaxLength="40" />
+    <Property Name="Last_Name" Type="varchar" MaxLength="40" />
+    <Property Name="Maiden_Name" Type="varchar" MaxLength="60" />
+    <Property Name="Preferred_Name" Type="varchar" MaxLength="40" />
+    <Property Name="Sex" Type="varchar" MaxLength="10" />
+    <Property Name="Married" Type="bit" Nullable="false" />
+    <Property Name="Marital_Status" Type="varchar" MaxLength="10" />
+    <Property Name="Spouse_First_Name" Type="varchar" MaxLength="40" />
+    <Property Name="Spouse_Middle_Name" Type="varchar" MaxLength="40" />
+    <Property Name="Spouse_Last_Name" Type="varchar" MaxLength="60" />
+    <Property Name="Spouse_SIN" Type="varchar" MaxLength="35" />
+    <Property Name="Spouse_SSN_Number" Type="varchar" MaxLength="35" />
+    <Property Name="Spouse_National_Number" Type="varchar" MaxLength="35" />
+    <Property Name="Spouse_Sex" Type="varchar" MaxLength="10" />
+    <Property Name="Spouse_DOB" Type="datetime" />
+    <Property Name="Address_Street_Number" Type="varchar" MaxLength="60" />
+    <Property Name="Address_City_Town" Type="varchar" MaxLength="35" />
+    <Property Name="Address_Province_State" Type="varchar" MaxLength="10" />
+    <Property Name="Address_Country" Type="varchar" MaxLength="10" />
+    <Property Name="Postal_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Telephone" Type="varchar" MaxLength="40" />
+    <Property Name="Facsimile" Type="varchar" MaxLength="40" />
+    <Property Name="EMail" Type="varchar" MaxLength="60" />
+    <Property Name="Telephone_Car" Type="varchar" MaxLength="40" />
+    <Property Name="Telephone_Mobile" Type="varchar" MaxLength="40" />
+    <Property Name="Alternate_Street_Number" Type="varchar" MaxLength="60" />
+    <Property Name="Alternate_City_Town" Type="varchar" MaxLength="35" />
+    <Property Name="Alternate_Province_State" Type="varchar" MaxLength="10" />
+    <Property Name="Alternate_Country" Type="varchar" MaxLength="10" />
+    <Property Name="Alternate_Postal_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Alternate_Telephone" Type="varchar" MaxLength="40" />
+    <Property Name="Alternate_Facsimile" Type="varchar" MaxLength="40" />
+    <Property Name="Alternate_EMail" Type="varchar" MaxLength="60" />
+    <Property Name="Alternate_Telephone_Car" Type="varchar" MaxLength="40" />
+    <Property Name="Alternate_Telephone_Mobile" Type="varchar" MaxLength="40" />
+    <Property Name="Date_of_Birth" Type="datetime" />
+    <Property Name="Date_Deceased" Type="datetime" />
+    <Property Name="Sin_Number" Type="varchar" MaxLength="35" />
+    <Property Name="SSN_Number" Type="varchar" MaxLength="35" />
+    <Property Name="National_Number" Type="varchar" MaxLength="35" />
+    <Property Name="Citizenship" Type="varchar" MaxLength="10" />
+    <Property Name="Telephone_Business" Type="varchar" MaxLength="40" />
+    <Property Name="Extension" Type="varchar" MaxLength="10" />
+    <Property Name="Facsimile_Business" Type="varchar" MaxLength="40" />
+    <Property Name="EMail_Business" Type="varchar" MaxLength="60" />
+    <Property Name="Telephone_Car_Business" Type="varchar" MaxLength="40" />
+    <Property Name="Telephone_Mobile_Business" Type="varchar" MaxLength="40" />
+    <Property Name="Mail_Drop" Type="varchar" MaxLength="40" />
+    <Property Name="Special_ID" Type="varchar" MaxLength="60" />
+    <Property Name="Rehire_Date" Type="datetime" />
+    <Property Name="Status" Type="varchar" MaxLength="10" />
+    <Property Name="Status_Effective_Date" Type="datetime" />
+    <Property Name="I9_Renewal_Date" Type="datetime" />
+    <Property Name="I9_Status" Type="varchar" MaxLength="10" />
+    <Property Name="W4_Status" Type="varchar" MaxLength="10" />
+    <Property Name="W4_Notes" Type="varchar" MaxLength="1000" />
+    <Property Name="W4_Filing_Status" Type="varchar" MaxLength="10" />
+    <Property Name="W4_Exemptions" Type="int" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="10" />
+    <Property Name="PIEmployee_Number" Type="varchar" MaxLength="60" />
+    <Property Name="Use_Delegate" Type="bit" />
+    <Property Name="Delegate_To" Type="uniqueidentifier" />
+    <Property Name="Supervisor_Locked" Type="bit" Nullable="false" />
+    <Property Name="Inactive" Type="bit" Nullable="false" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_Accessible_Employee_Sets">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Application_User" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Application_Role" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Dictionary_Table" Type="uniqueidentifier" />
+    <Property Name="Employee_Set" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="_S_Accessible_Employees">
+    <Key>
+      <PropertyRef Name="Employee_Set" />
+      <PropertyRef Name="Employee" />
+    </Key>
+    <Property Name="Employee_Set" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Employee" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="_S_Accessible_Objects">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Application_Role" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Security_Object" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Security_Object_Full_Name" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="Security_Object_Level" Type="int" Nullable="false" />
+    <Property Name="Application" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Access_Type" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="_S_Application_Access_Log">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Security_Object" Type="uniqueidentifier" />
+    <Property Name="Storage" Type="varchar" MaxLength="50" />
+    <Property Name="Employee" Type="uniqueidentifier" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="_S_Application_Errors">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Source" Type="varchar" MaxLength="200" />
+    <Property Name="Message" Type="varchar" MaxLength="2000" />
+    <Property Name="Form" Type="varchar" MaxLength="200" />
+    <Property Name="Query_String" Type="varchar" MaxLength="500" />
+    <Property Name="Target_Site" Type="varchar" MaxLength="200" />
+    <Property Name="Stack_Trace" Type="varchar" MaxLength="4000" />
+    <Property Name="Referer" Type="varchar" MaxLength="500" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+  </EntityType>
+  <EntityType Name="_S_Application_Role_Area_Objects">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Application_Role" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Application" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Area" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Security_Object" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Access_Type" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_Application_Role_Objects">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Application_Role" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Application" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Security_Object" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Access_Type" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Condition" Type="varchar" MaxLength="1000" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_Application_Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Security_Profile" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Application_Theme" Type="varchar" MaxLength="10" />
+    <Property Name="Application_Setting" Type="uniqueidentifier" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_Application_User_Active_Roles">
+    <Key>
+      <PropertyRef Name="Session_Id" />
+    </Key>
+    <Property Name="Session_Id" Type="varchar" Nullable="false" MaxLength="24" />
+    <Property Name="Application_User" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Application_Role" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_Application_User_Login_Logs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Login" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Logged" Type="datetime" Nullable="false" />
+    <Property Name="User_Host_Address" Type="varchar" MaxLength="100" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_Application_User_Message_Logs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Application_User" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Application_User_Message" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Delivery_Datetime" Type="datetime" Nullable="false" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_Application_User_Messages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="From_User" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="To_User" Type="uniqueidentifier" />
+    <Property Name="Start_Date" Type="datetime" />
+    <Property Name="End_Date" Type="datetime" />
+    <Property Name="Workflow_Instance_Step_Message" Type="uniqueidentifier" />
+    <Property Name="Unread" Type="bit" Nullable="false" />
+    <Property Name="Is_Removable" Type="bit" Nullable="false" />
+    <Property Name="Delivery_Receipt" Type="bit" Nullable="false" />
+    <Property Name="Is_Deleted" Type="bit" Nullable="false" />
+    <Property Name="Opened_Date" Type="datetime" />
+    <Property Name="Deleted_Date" Type="datetime" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_Application_User_Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Application_User" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Application_Role" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Security_Profile" Type="uniqueidentifier" />
+    <Property Name="Is_Default" Type="bit" Nullable="false" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_Application_Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Company" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Login" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="1000" />
+    <Property Name="Salt" Type="varchar" MaxLength="1000" />
+    <Property Name="Win_Group_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Full_Name" Type="varchar" MaxLength="100" />
+    <Property Name="Default_Employee" Type="uniqueidentifier" />
+    <Property Name="Email" Type="varchar" MaxLength="60" />
+    <Property Name="Inactive" Type="bit" Nullable="false" />
+    <Property Name="Locked" Type="bit" Nullable="false" />
+    <Property Name="ReadOnly" Type="bit" Nullable="false" />
+    <Property Name="Application_Theme" Type="varchar" MaxLength="10" />
+    <Property Name="First_Logon" Type="bit" Nullable="false" />
+    <Property Name="Force_Password_Change" Type="bit" Nullable="false" />
+    <Property Name="Last_Lockout_Date" Type="datetime" />
+    <Property Name="Invalid_Password_Attempts" Type="int" Nullable="false" />
+    <Property Name="Password_Date" Type="datetime" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_Companies">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="Street_Address_1" Type="varchar" MaxLength="60" />
+    <Property Name="Street_Address_2" Type="varchar" MaxLength="60" />
+    <Property Name="City_Town" Type="varchar" MaxLength="35" />
+    <Property Name="Province" Type="varchar" MaxLength="10" />
+    <Property Name="Postal_Code" Type="varchar" MaxLength="20" />
+    <Property Name="Country" Type="varchar" MaxLength="10" />
+    <Property Name="Telephone_Area_Code" Type="varchar" MaxLength="5" />
+    <Property Name="Telephone_Number" Type="varchar" MaxLength="40" />
+    <Property Name="Facsimile_Area_Code" Type="varchar" MaxLength="5" />
+    <Property Name="Facsimile_Number" Type="varchar" MaxLength="40" />
+    <Property Name="Telex_Number" Type="varchar" MaxLength="40" />
+    <Property Name="Private_Domain_Name" Type="varchar" MaxLength="60" />
+    <Property Name="Website_URL" Type="varchar" MaxLength="60" />
+    <Property Name="Date_Established" Type="datetime" />
+    <Property Name="Salary_Program" Type="varchar" MaxLength="10" />
+    <Property Name="Performance_Pay" Type="bit" Nullable="false" />
+    <Property Name="Enforce_Work_Rules" Type="bit" Nullable="false" />
+    <Property Name="Enforce_Org_Integrity" Type="bit" Nullable="false" />
+    <Property Name="Max_Hours_Week" Type="decimal" Nullable="false" Scale="8" />
+    <Property Name="Logo" Type="varchar" MaxLength="100" />
+    <Property Name="TaxId" Type="varchar" MaxLength="60" />
+    <Property Name="NAICS" Type="varchar" MaxLength="60" />
+    <Property Name="SIC" Type="varchar" MaxLength="10" />
+    <Property Name="DUNS" Type="varchar" MaxLength="60" />
+    <Property Name="EEO" Type="varchar" MaxLength="60" />
+    <Property Name="Server_Time_Zone" Type="int" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_Descriptions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Obj" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Type" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Language" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Str" Type="varchar" MaxLength="7000" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_Error_Table">
+    <Key>
+      <PropertyRef Name="Language" />
+      <PropertyRef Name="Error_Number" />
+    </Key>
+    <Property Name="Language" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Error_Number" Type="int" Nullable="false" />
+    <Property Name="Error_Message" Type="varchar" MaxLength="255" />
+    <Property Name="Error_Type" Type="smallint" />
+    <Property Name="Error_Box_Title" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_Languages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Name" Type="varchar" MaxLength="20" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_Security_Employee_Sets">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="_S_Security_Objects">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Type" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="Parent" Type="uniqueidentifier" />
+    <Property Name="Url" Type="varchar" MaxLength="1024" />
+    <Property Name="Help_Id" Type="varchar" MaxLength="100" />
+    <Property Name="View_Order" Type="int" Nullable="false" />
+    <Property Name="Ref_Object" Type="uniqueidentifier" />
+    <Property Name="Is_System_Object" Type="bit" Nullable="false" />
+    <Property Name="Is_Read_Only" Type="bit" Nullable="false" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="Inline_CSS" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="_S_Security_Objects_Tree">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="10" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="Url" Type="varchar" MaxLength="1024" />
+    <Property Name="View_Order" Type="int" />
+    <Property Name="Ref_Object" Type="uniqueidentifier" />
+    <Property Name="Is_System_Object" Type="bit" />
+    <Property Name="Is_Read_Only" Type="bit" />
+    <Property Name="Full_Name" Type="varchar" MaxLength="1000" />
+    <Property Name="Level" Type="int" />
+    <Property Name="Parent" Type="uniqueidentifier" />
+    <Property Name="Help_Id" Type="varchar" MaxLength="100" />
+    <Property Name="Row_Version" Type="varbinary" MaxLength="8" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+  </EntityType>
+  <EntityType Name="_S_Security_Profile_Tables">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Security_Profile" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Dictionary_Table" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Sql_Text" Type="varchar" MaxLength="2000" />
+    <Property Name="Xml_Text" Type="varchar" MaxLength="6000" />
+    <Property Name="Saved_Sql_Expression" Type="uniqueidentifier" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_Security_Profiles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="Sql_Text" Type="varchar" MaxLength="2000" />
+    <Property Name="Xml_Text" Type="varchar" MaxLength="6000" />
+    <Property Name="Saved_Sql_Expression" Type="uniqueidentifier" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_Security_Tokens">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Authentication_Ticket" Type="varchar(max)" Nullable="false" />
+    <Property Name="Expiry" Type="datetime" Nullable="false" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_UT_Workflow_Instance_Schedule_Employees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Schedule" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Employee" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+  </EntityType>
+  <EntityType Name="_S_UT_Workflow_Instance_Schedules">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Instance" Type="uniqueidentifier" />
+    <Property Name="Schedule_Type" Type="varchar" MaxLength="10" />
+    <Property Name="Specific_Date" Type="datetime" />
+    <Property Name="Occurance_Number" Type="varchar" MaxLength="10" />
+    <Property Name="Month_Code" Type="varchar" MaxLength="10" />
+    <Property Name="Weekday_Code" Type="varchar" MaxLength="10" />
+    <Property Name="Day_Code" Type="varchar" MaxLength="10" />
+    <Property Name="Dictionary_Field" Type="uniqueidentifier" />
+    <Property Name="Days_Offset" Type="int" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+  </EntityType>
+  <EntityType Name="_S_UT_Workflow_Instances">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Ref_Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Started" Type="datetime" Nullable="false" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Status" Type="varchar" MaxLength="10" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+  </EntityType>
+  <EntityType Name="_S_UT_Workflow_Schedule_Employees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Schedule" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Employee" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+  </EntityType>
+  <EntityType Name="_S_UT_Workflow_Schedules">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Workflow" Type="uniqueidentifier" />
+    <Property Name="Schedule_Type" Type="varchar" MaxLength="10" />
+    <Property Name="Specific_Date" Type="datetime" />
+    <Property Name="Occurance_Number" Type="varchar" MaxLength="10" />
+    <Property Name="Month_Code" Type="varchar" MaxLength="10" />
+    <Property Name="Weekday_Code" Type="varchar" MaxLength="10" />
+    <Property Name="Day_Code" Type="varchar" MaxLength="10" />
+    <Property Name="Dictionary_Field" Type="uniqueidentifier" />
+    <Property Name="Days_Offset" Type="int" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+  </EntityType>
+  <EntityType Name="_S_UT_Workflow_Step_Statuses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Workflow_Instance" Type="uniqueidentifier" />
+    <Property Name="Ref_Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Step_Screen" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Step_Number" Type="int" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+    <Property Name="Created_By" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Updated_By" Type="varchar" MaxLength="200" />
+    <Property Name="Inactive" Type="bit" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="10" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_UT_Workflow_Steps">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Workflow" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Step_Screen" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Step_Number" Type="int" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+    <Property Name="Created_By" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Updated_By" Type="uniqueidentifier" />
+    <Property Name="Inactive" Type="bit" Nullable="false" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_UT_Workflow_Task_CheckList_Statuses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Workflow_Instance" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Ref_Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+    <Property Name="Created_By" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Updated_By" Type="uniqueidentifier" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Inactive" Type="bit" Nullable="false" />
+    <Property Name="Complete" Type="bit" Nullable="false" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_UT_Workflow_Task_CheckLists">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Workflow_Task" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+    <Property Name="Created_By" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Updated_By" Type="uniqueidentifier" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Inactive" Type="bit" Nullable="false" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+  </EntityType>
+  <EntityType Name="_S_UT_Workflow_TaskForm_Statuses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Workflow_Instance" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Ref_Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+    <Property Name="Created_By" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Updated_By" Type="varchar" MaxLength="200" />
+    <Property Name="Subject_Employee_Id" Type="varchar" MaxLength="10" />
+    <Property Name="Subject_Employee_Name" Type="varchar" MaxLength="200" />
+    <Property Name="From_Employee_Name" Type="varchar" MaxLength="200" />
+    <Property Name="Employee_To" Type="uniqueidentifier" />
+    <Property Name="Employee_CC" Type="uniqueidentifier" />
+    <Property Name="Employee_BCC" Type="uniqueidentifier" />
+    <Property Name="Subject" Type="varchar(max)" />
+    <Property Name="Message_Box" Type="varchar(max)" />
+    <Property Name="Escalate_To" Type="uniqueidentifier" />
+    <Property Name="Escalate_After" Type="int" />
+    <Property Name="Escalate_Timestamp" Type="datetime" />
+    <Property Name="Sign_Off" Type="varchar" MaxLength="200" />
+    <Property Name="Sign_Timestamp" Type="datetime" />
+    <Property Name="Cancel_By" Type="varchar" MaxLength="200" />
+    <Property Name="Cancel_Timestamp" Type="datetime" />
+    <Property Name="Inactive" Type="bit" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="10" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_UT_Workflow_TaskForms">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Task" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+    <Property Name="Created_By" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Updated_By" Type="uniqueidentifier" />
+    <Property Name="Subject_Employee_Id" Type="varchar" MaxLength="10" />
+    <Property Name="Subject_Employee_Name" Type="varchar" MaxLength="200" />
+    <Property Name="From_Employee_Name" Type="varchar" MaxLength="200" />
+    <Property Name="Employee_To" Type="uniqueidentifier" />
+    <Property Name="Employee_CC" Type="uniqueidentifier" />
+    <Property Name="Employee_BCC" Type="uniqueidentifier" />
+    <Property Name="Subject" Type="varchar(max)" />
+    <Property Name="Message_Box" Type="varchar(max)" />
+    <Property Name="Escalate_To" Type="uniqueidentifier" />
+    <Property Name="Escalate_After" Type="int" />
+    <Property Name="Escalate_Timestamp" Type="datetime" />
+    <Property Name="Sign_Off" Type="varchar" MaxLength="200" />
+    <Property Name="Sign_Timestamp" Type="datetime" />
+    <Property Name="Cancel_By" Type="varchar" MaxLength="200" />
+    <Property Name="Cancel_Timestamp" Type="datetime" />
+    <Property Name="Inactive" Type="bit" Nullable="false" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_UT_Workflow_Tasks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Workflow_Step" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Task_Number" Type="int" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+    <Property Name="Created_By" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Updated_By" Type="uniqueidentifier" />
+    <Property Name="Inactive" Type="bit" Nullable="false" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="_S_UT_Workflows">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Language" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Workflow_Name" Type="varchar(max)" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+    <Property Name="Created_By" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Updated_By" Type="uniqueidentifier" />
+    <Property Name="Inactive" Type="bit" Nullable="false" />
+    <Property Name="Audit_User" Type="varchar" MaxLength="50" />
+    <Property Name="Audit_Date" Type="datetime" />
+    <Property Name="Audit_System" Type="varchar" MaxLength="120" />
+    <Property Name="Row_Version" Type="timestamp" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <Association Name="_S_Companies__P_EM_Employees_FK1">
+    <End Role="_S_Companies" Type="ASLModel.Store._S_Companies" Multiplicity="1" />
+    <End Role="_P_EM_Employees" Type="ASLModel.Store._P_EM_Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Companies">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_P_EM_Employees">
+        <PropertyRef Name="Company" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="_S_Companies__S_Codes_FK1">
+    <End Role="_S_Companies" Type="ASLModel.Store._S_Companies" Multiplicity="1" />
+    <End Role="_C_UT_Codes" Type="ASLModel.Store._C_UT_Codes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Companies">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_C_UT_Codes">
+        <PropertyRef Name="Company" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="_S_Languages__S_Codes_FK1">
+    <End Role="_S_Languages" Type="ASLModel.Store._S_Languages" Multiplicity="1" />
+    <End Role="_C_UT_Codes" Type="ASLModel.Store._C_UT_Codes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Languages">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_C_UT_Codes">
+        <PropertyRef Name="Language" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="_S_Languages__S_Descriptions_FK1">
+    <End Role="_S_Languages" Type="ASLModel.Store._S_Languages" Multiplicity="1" />
+    <End Role="_S_Descriptions" Type="ASLModel.Store._S_Descriptions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Languages">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Descriptions">
+        <PropertyRef Name="Language" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="_S_Security_Objects__S_Accessible_Objects_FK1">
+    <End Role="_S_Security_Objects" Type="ASLModel.Store._S_Security_Objects" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="_S_Accessible_Objects" Type="ASLModel.Store._S_Accessible_Objects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Security_Objects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Accessible_Objects">
+        <PropertyRef Name="Security_Object" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="_S_Security_Objects__S_Security_Objects_FK1">
+    <End Role="_S_Security_Objects" Type="ASLModel.Store._S_Security_Objects" Multiplicity="0..1" />
+    <End Role="_S_Security_Objects1" Type="ASLModel.Store._S_Security_Objects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Security_Objects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Security_Objects1">
+        <PropertyRef Name="Parent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__P_EM_Employees__P_EM_Employees">
+    <End Role="_P_EM_Employees" Type="ASLModel.Store._P_EM_Employees" Multiplicity="0..1" />
+    <End Role="_P_EM_Employees1" Type="ASLModel.Store._P_EM_Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_P_EM_Employees">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_P_EM_Employees1">
+        <PropertyRef Name="Supervisor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Accessible_Employee_Sets__S_Application_Roles">
+    <End Role="_S_Application_Roles" Type="ASLModel.Store._S_Application_Roles" Multiplicity="1" />
+    <End Role="_S_Accessible_Employee_Sets" Type="ASLModel.Store._S_Accessible_Employee_Sets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Application_Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Accessible_Employee_Sets">
+        <PropertyRef Name="Application_Role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Accessible_Employee_Sets__S_Application_Users">
+    <End Role="_S_Application_Users" Type="ASLModel.Store._S_Application_Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="_S_Accessible_Employee_Sets" Type="ASLModel.Store._S_Accessible_Employee_Sets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Application_Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Accessible_Employee_Sets">
+        <PropertyRef Name="Application_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Accessible_Employee_Sets__S_Security_Employee_Sets">
+    <End Role="_S_Security_Employee_Sets" Type="ASLModel.Store._S_Security_Employee_Sets" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="_S_Accessible_Employee_Sets" Type="ASLModel.Store._S_Accessible_Employee_Sets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Security_Employee_Sets">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Accessible_Employee_Sets">
+        <PropertyRef Name="Employee_Set" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Accessible_Employees__S_Security_Employee_Sets">
+    <End Role="_S_Security_Employee_Sets" Type="ASLModel.Store._S_Security_Employee_Sets" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="_S_Accessible_Employees" Type="ASLModel.Store._S_Accessible_Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Security_Employee_Sets">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Accessible_Employees">
+        <PropertyRef Name="Employee_Set" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Accessible_Objects__S_Application_Roles">
+    <End Role="_S_Application_Roles" Type="ASLModel.Store._S_Application_Roles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="_S_Accessible_Objects" Type="ASLModel.Store._S_Accessible_Objects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Application_Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Accessible_Objects">
+        <PropertyRef Name="Application_Role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_Role_Area_Objects__S_Application_Roles">
+    <End Role="_S_Application_Roles" Type="ASLModel.Store._S_Application_Roles" Multiplicity="1" />
+    <End Role="_S_Application_Role_Area_Objects" Type="ASLModel.Store._S_Application_Role_Area_Objects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Application_Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Application_Role_Area_Objects">
+        <PropertyRef Name="Application_Role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_Role_Area_Objects__S_Security_Objects">
+    <End Role="_S_Security_Objects" Type="ASLModel.Store._S_Security_Objects" Multiplicity="1" />
+    <End Role="_S_Application_Role_Area_Objects" Type="ASLModel.Store._S_Application_Role_Area_Objects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Security_Objects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Application_Role_Area_Objects">
+        <PropertyRef Name="Area" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_Role_Area_Objects__S_Security_Objects1">
+    <End Role="_S_Security_Objects" Type="ASLModel.Store._S_Security_Objects" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="_S_Application_Role_Area_Objects" Type="ASLModel.Store._S_Application_Role_Area_Objects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Security_Objects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Application_Role_Area_Objects">
+        <PropertyRef Name="Security_Object" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_Role_Objects__S_Application_Roles">
+    <End Role="_S_Application_Roles" Type="ASLModel.Store._S_Application_Roles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="_S_Application_Role_Objects" Type="ASLModel.Store._S_Application_Role_Objects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Application_Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Application_Role_Objects">
+        <PropertyRef Name="Application_Role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_Role_Objects__S_Security_Objects">
+    <End Role="_S_Security_Objects" Type="ASLModel.Store._S_Security_Objects" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="_S_Application_Role_Objects" Type="ASLModel.Store._S_Application_Role_Objects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Security_Objects">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Application_Role_Objects">
+        <PropertyRef Name="Security_Object" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_Roles__S_Security_Profiles">
+    <End Role="_S_Security_Profiles" Type="ASLModel.Store._S_Security_Profiles" Multiplicity="1" />
+    <End Role="_S_Application_Roles" Type="ASLModel.Store._S_Application_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Security_Profiles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Application_Roles">
+        <PropertyRef Name="Security_Profile" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_User_Messages__S_Application_Users">
+    <End Role="_S_Application_Users" Type="ASLModel.Store._S_Application_Users" Multiplicity="0..1" />
+    <End Role="_S_Application_User_Messages" Type="ASLModel.Store._S_Application_User_Messages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Application_Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Application_User_Messages">
+        <PropertyRef Name="To_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_User_Messages__S_Application_Users1">
+    <End Role="_S_Application_Users" Type="ASLModel.Store._S_Application_Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="_S_Application_User_Messages" Type="ASLModel.Store._S_Application_User_Messages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Application_Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Application_User_Messages">
+        <PropertyRef Name="From_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_User_Roles__S_Application_Roles">
+    <End Role="_S_Application_Roles" Type="ASLModel.Store._S_Application_Roles" Multiplicity="1" />
+    <End Role="_S_Application_User_Roles" Type="ASLModel.Store._S_Application_User_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Application_Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Application_User_Roles">
+        <PropertyRef Name="Application_Role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_User_Roles__S_Application_Users">
+    <End Role="_S_Application_Users" Type="ASLModel.Store._S_Application_Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="_S_Application_User_Roles" Type="ASLModel.Store._S_Application_User_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Application_Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Application_User_Roles">
+        <PropertyRef Name="Application_User" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Application_User_Roles__S_Security_Profiles">
+    <End Role="_S_Security_Profiles" Type="ASLModel.Store._S_Security_Profiles" Multiplicity="0..1" />
+    <End Role="_S_Application_User_Roles" Type="ASLModel.Store._S_Application_User_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Security_Profiles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Application_User_Roles">
+        <PropertyRef Name="Security_Profile" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_Security_Profile_Tables__S_Security_Profiles">
+    <End Role="_S_Security_Profiles" Type="ASLModel.Store._S_Security_Profiles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="_S_Security_Profile_Tables" Type="ASLModel.Store._S_Security_Profile_Tables" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_Security_Profiles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Security_Profile_Tables">
+        <PropertyRef Name="Security_Profile" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Instance_Schedule_Employees__S_UT_Workflow_Instance_Schedules">
+    <End Role="_S_UT_Workflow_Instance_Schedules" Type="ASLModel.Store._S_UT_Workflow_Instance_Schedules" Multiplicity="1" />
+    <End Role="_S_UT_Workflow_Instance_Schedule_Employees" Type="ASLModel.Store._S_UT_Workflow_Instance_Schedule_Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_UT_Workflow_Instance_Schedules">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_UT_Workflow_Instance_Schedule_Employees">
+        <PropertyRef Name="Schedule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Instance_Schedules__S_UT_Workflow_Instances">
+    <End Role="_S_UT_Workflow_Instances" Type="ASLModel.Store._S_UT_Workflow_Instances" Multiplicity="0..1" />
+    <End Role="_S_UT_Workflow_Instance_Schedules" Type="ASLModel.Store._S_UT_Workflow_Instance_Schedules" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_UT_Workflow_Instances">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_UT_Workflow_Instance_Schedules">
+        <PropertyRef Name="Instance" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Instances__S_UT_Workflow_Task_CheckList_Statuses">
+    <End Role="_S_UT_Workflow_Task_CheckList_Statuses" Type="ASLModel.Store._S_UT_Workflow_Task_CheckList_Statuses" Multiplicity="1" />
+    <End Role="_S_UT_Workflow_Instances" Type="ASLModel.Store._S_UT_Workflow_Instances" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="_S_UT_Workflow_Task_CheckList_Statuses">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_UT_Workflow_Instances">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Schedule_Employees__S_UT_Workflow_Schedules">
+    <End Role="_S_UT_Workflow_Schedules" Type="ASLModel.Store._S_UT_Workflow_Schedules" Multiplicity="1" />
+    <End Role="_S_UT_Workflow_Schedule_Employees" Type="ASLModel.Store._S_UT_Workflow_Schedule_Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_UT_Workflow_Schedules">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_UT_Workflow_Schedule_Employees">
+        <PropertyRef Name="Schedule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Schedules__S_UT_Workflows">
+    <End Role="_S_UT_Workflows" Type="ASLModel.Store._S_UT_Workflows" Multiplicity="0..1" />
+    <End Role="_S_UT_Workflow_Schedules" Type="ASLModel.Store._S_UT_Workflow_Schedules" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_UT_Workflows">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_UT_Workflow_Schedules">
+        <PropertyRef Name="Workflow" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Step_Statuses__S_UT_Workflow_Instances">
+    <End Role="_S_UT_Workflow_Instances" Type="ASLModel.Store._S_UT_Workflow_Instances" Multiplicity="0..1" />
+    <End Role="_S_UT_Workflow_Step_Statuses" Type="ASLModel.Store._S_UT_Workflow_Step_Statuses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_UT_Workflow_Instances">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_UT_Workflow_Step_Statuses">
+        <PropertyRef Name="Workflow_Instance" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Steps__S_UT_Workflows">
+    <End Role="_S_UT_Workflows" Type="ASLModel.Store._S_UT_Workflows" Multiplicity="1" />
+    <End Role="_S_UT_Workflow_Steps" Type="ASLModel.Store._S_UT_Workflow_Steps" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_UT_Workflows">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_UT_Workflow_Steps">
+        <PropertyRef Name="Workflow" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Task_CheckList__S_UT_Workflow_Tasks">
+    <End Role="_S_UT_Workflow_Tasks" Type="ASLModel.Store._S_UT_Workflow_Tasks" Multiplicity="1" />
+    <End Role="_S_UT_Workflow_Task_CheckLists" Type="ASLModel.Store._S_UT_Workflow_Task_CheckLists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_UT_Workflow_Tasks">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_UT_Workflow_Task_CheckLists">
+        <PropertyRef Name="Workflow_Task" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_TaskForm_Statuses__S_UT_Workflow_Instances">
+    <End Role="_S_UT_Workflow_Instances" Type="ASLModel.Store._S_UT_Workflow_Instances" Multiplicity="1" />
+    <End Role="_S_UT_Workflow_TaskForm_Statuses" Type="ASLModel.Store._S_UT_Workflow_TaskForm_Statuses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_UT_Workflow_Instances">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_UT_Workflow_TaskForm_Statuses">
+        <PropertyRef Name="Workflow_Instance" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_TaskForms__S_UT_Workflow_Tasks">
+    <End Role="_S_UT_Workflow_Tasks" Type="ASLModel.Store._S_UT_Workflow_Tasks" Multiplicity="1" />
+    <End Role="_S_UT_Workflow_TaskForms" Type="ASLModel.Store._S_UT_Workflow_TaskForms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_UT_Workflow_Tasks">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_UT_Workflow_TaskForms">
+        <PropertyRef Name="Task" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_UT_Workflow_Tasks__S_UT_Workflow_Steps">
+    <End Role="_S_UT_Workflow_Steps" Type="ASLModel.Store._S_UT_Workflow_Steps" Multiplicity="1" />
+    <End Role="_S_UT_Workflow_Tasks" Type="ASLModel.Store._S_UT_Workflow_Tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_S_UT_Workflow_Steps">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_UT_Workflow_Tasks">
+        <PropertyRef Name="Workflow_Step" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AccessibleEmployees_Employees">
+    <End Role="_P_EM_Employees" Type="ASLModel.Store._P_EM_Employees" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="_S_Accessible_Employees" Type="ASLModel.Store._S_Accessible_Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="_P_EM_Employees">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="_S_Accessible_Employees">
+        <PropertyRef Name="Employee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="Application_Exists" ReturnType="bit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ApplicationRole_Exists" ReturnType="bit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Code_Exists" ReturnType="bit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Type" Type="varchar" Mode="In" />
+    <Parameter Name="Id" Type="varchar" Mode="In" />
+  </Function>
+</Schema>
